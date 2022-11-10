@@ -71,3 +71,15 @@
   height: 350px;
   margin: 19px auto 0;
 }
+
+.navigation-bar {
+  background-color: red;  
+  position: fixed;  
+  left: 0;  
+  right: 0;  
+  top: 5px;  
+  height: 30px;  
+  display: flex;  
+  align-items: center;  
+  box-shadow: 0 0 25px 0 black;  
+}

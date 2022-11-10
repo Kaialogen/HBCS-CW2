@@ -41,3 +41,4 @@ For 100%
 - Removed all `<p>` tags from shop.html as this information is obsolete as it can be found in movie.html (Kaialogen) 
 - Added images and added a css class in shop.css to size all images to width 250px and height 350px (Kaialogen)
 - Added price label to each sector in shop.html (Kaialogen)
+- Added ClearBasket function in basket.html (Kaialogen)
