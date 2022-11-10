@@ -27,7 +27,7 @@ For 100%
 
 # Issues:
 
-1. 
-2. 
+1. Change login.html to shop.html for the front page. 
+2. Give each Page a subdirectory/css file and add image folder
 3. 
 4. 
