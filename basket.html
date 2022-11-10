@@ -39,7 +39,7 @@
           <br />
           <a href="/order.html">Go to payment details</a>
           <br />
-          <button onclick="localStorage.setItem('basket', '[]');">Clear Basket</button>
+          <button type="button" onclick="ClearBasket()">Clear Basket</button>
 
         </div>
       </article>
@@ -48,6 +48,14 @@
 
   <script src="./js/movies.js"></script>
   <script>
+
+    //added to fix basket reloading
+    function ClearBasket()
+    {
+      //Function to clear basket array and refresh page
+      localStorage.setItem('basket', '[]');
+      window.location.reload();
+    }
     const basketContainer = document.getElementById("basket");
 
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
