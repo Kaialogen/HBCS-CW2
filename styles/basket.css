@@ -95,4 +95,20 @@
   text-decoration: none;  
   } 
 
-  
+  .th1 {
+    text-align: left;
+    color:black;
+  }
+  .th2 {
+    text-align: left;
+    color: black;
+  }
+
+  .th3 {
+    text-align: left;
+    color: black;
+  }
+
+  tbody {
+    text-align: left;
+  }
