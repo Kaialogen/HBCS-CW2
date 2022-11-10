@@ -29,7 +29,7 @@ For 100%
 
 1. Change login.html to shop.html for the front page. 
 2. Give each Page a subdirectory/css file and add image folder
-3. 
+3. Images Missing and are not of same size
 4. 
 
 
@@ -37,3 +37,4 @@ For 100%
 - Updated every page with doctype and better lang support (Kaialogen) 
 - Done some changes to the header section in shop.html (Kaialogen)
 - Removed all `<p>` tags from shop.html as this information is obsolete as it can be found in movie.html (Kaialogen) 
+- Added images and added a css class in shop.css to size all images to width 250px and height 350px (Kaialogen)
