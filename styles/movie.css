@@ -44,7 +44,6 @@
   #main > article {
     flex: 1;
   }
-  #main > nav,
   #main > aside {
     flex: 0 0 20vw;
     background: lightgray;
@@ -52,7 +51,7 @@
   #main > nav {
     order: -1;
   }
-  header,
+
   footer {
     background: red;
     height: 5vh;
@@ -66,3 +65,31 @@
     padding: 1em;
   }
   
+  header {
+    background-color: red;  
+    position: fixed;  
+    left: 0;  
+    right: 0;  
+    top: 0px;  
+    height: 30px;  
+    display: flex;  
+    align-items: center;   
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  header * {
+    display: inline;
+    }
+  
+  header li {  
+  margin: 20px;  
+  }  
+  
+  header li a {  
+  color: white;  
+  text-decoration: none;  
+  } 

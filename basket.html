@@ -14,10 +14,38 @@
     />
   </head>
   <body>
-    <header>
-      <strong>Movie Rentals</strong>
-    </header>
     <div id="main">
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <strong style="padding: 10px 20px;">Movie Rentals</strong>
+          </li>
+          <li>
+            <a href="/basket.html" style="padding: 10px 20px;">View Basket</a>
+          </li>
+          <li>
+            <a href="/login.html" style="padding: 10px 20px;">Login</a>
+          </li>
+          <li>
+            <a href="/shop.html">Shop</a>
+          </li>
+      </ul>
+               <!-- Genres:
+        <ul>
+          <li>Adventure</li>
+          <li>Animation</li>
+          <li>Science fiction</li>
+          <li>Comedy</li>
+          <li>Drama</li>
+          <li>Horror</li>
+          <li>Action</li>
+        </ul> -->
+
+
+        <br />
+      </nav>
+      </header>
       <article>
         <h1 style="text-align: center">Basket</h1>
         <div style="background-color: lightgrey; width: 70%; margin: auto; padding: 2em">
@@ -35,8 +63,6 @@
           <div style="text-align: right"><strong>Total Price:</strong> £<span id="total-price"></span></div>
           <hr />
           <!-- Changed order and added breaks-->
-          <a href="/shop.html">Continue Shopping</a>
-          <br />
           <a href="/order.html">Go to payment details</a>
           <br />
           <button type="button" onclick="ClearBasket()">Clear Basket</button>

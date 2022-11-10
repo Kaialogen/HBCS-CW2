@@ -22,11 +22,23 @@
 
   <body>
     <div id="main">
-      <nav class=".navigation-bar">
-        <strong style="padding: 10px 20px;">Movie Rentals</strong>
-        <br />
-        <br />
-       <!-- Genres:
+      <header>
+      <nav>
+        <ul>
+          <li>
+            <strong style="padding: 10px 20px;">Movie Rentals</strong>
+          </li>
+          <li>
+            <a href="/basket.html" style="padding: 10px 20px;">View Basket</a>
+          </li>
+          <li>
+            <a href="/login.html" style="padding: 10px 20px;">Login</a>
+          </li>
+          <li>
+            <a href="/shop.html">Shop</a>
+          </li>
+      </ul>
+               <!-- Genres:
         <ul>
           <li>Adventure</li>
           <li>Animation</li>
@@ -35,27 +47,23 @@
           <li>Drama</li>
           <li>Horror</li>
           <li>Action</li>
-        </ul>
-        <br />
-        <br /> -->
-        <a href="/basket.html" style="padding: 10px 20px;">View Basket</a>
-        <br />
-        <!--<button onclick="localStorage.setItem('basket', '[]')">Empty Basket</button>
-        <br />
-        <br />
-         <a href="/login.html"><strong>Exit</strong></a> -->
-        <a href="/login.html" style="padding: 10px 20px;">Login</a>
+        </ul> -->
+
+
         <br />
       </nav>
+      </header>
       <article>
         <div class="movie">
           <div>
             <img class="image-1" src="/images/Shang-Chi.jpg" alt=""/>
           </div>
           <div style="margin: 0 0.75em">
+            <br />
             <h4 style="margin: 0">Shang-Chi and the Legend of the Ten Rings (2021)</h4>
           </div>
           <div>
+            <br />
             <a href="/movie.html?id=1">View Movie</a><br />
             <label>Price: £2.49 per day</label><br />
             <label>Days to rent:</label><br />

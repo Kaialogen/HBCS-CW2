@@ -44,14 +44,14 @@
   #main > article {
     flex: 1;
   }
-  #main > nav,
+  /*#main > nav, */
   #main > aside {
     flex: 0 0 20vw;
     background: lightgray;
   }
-  #main > nav {
+  /*#main > nav {
     order: -1;
-  }
+  } */
   header,
   footer {
     background: red;
@@ -61,7 +61,7 @@
   header,
   footer,
   article,
-  nav,
+  /*nav, */
   aside {
     padding: 1em;
   }
@@ -72,14 +72,31 @@
   margin: 19px auto 0;
 }
 
-.navigation-bar {
+header {
   background-color: red;  
   position: fixed;  
   left: 0;  
   right: 0;  
-  top: 5px;  
+  top: 0px;  
   height: 30px;  
   display: flex;  
-  align-items: center;  
-  box-shadow: 0 0 25px 0 black;  
+  align-items: center;   
 }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header * {
+  display: inline;
+  }
+
+header li {  
+margin: 20px;  
+}  
+
+header li a {  
+color: white;  
+text-decoration: none;  
+} 
