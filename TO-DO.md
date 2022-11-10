@@ -31,3 +31,9 @@ For 100%
 2. Give each Page a subdirectory/css file and add image folder
 3. 
 4. 
+
+
+# Stuff changed:
+- Updated every page with doctype and better lang support (Kaialogen) 
+- Done some changes to the header section in shop.html (Kaialogen)
+- Removed all `<p>` tags from shop.html as this information is obsolete as it can be found in movie.html (Kaialogen) 
