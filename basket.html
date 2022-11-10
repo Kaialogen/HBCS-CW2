@@ -34,9 +34,13 @@
           <hr />
           <div style="text-align: right"><strong>Total Price:</strong> £<span id="total-price"></span></div>
           <hr />
-          <a href="">Continue Shopping</a>
-          <button onclick="localStorage.setItem('basket', '[]');">Clear Basket</button>
+          <!-- Changed order and added breaks-->
+          <a href="/shop.html">Continue Shopping</a>
+          <br />
           <a href="/order.html">Go to payment details</a>
+          <br />
+          <button onclick="localStorage.setItem('basket', '[]');">Clear Basket</button>
+
         </div>
       </article>
     </div>
@@ -63,7 +67,7 @@
       );
       totalPrice += basketItem.price * basketItem.rentDays;
     });
-
-    document.getElementById("total-price").textContent = totalPrice * 1.2;
+    //changed the value of 1.2 to 1 (no clue what the 1.2 did? maybe vat?)
+    document.getElementById("total-price").textContent = totalPrice * 1;
   </script>
 </html>
