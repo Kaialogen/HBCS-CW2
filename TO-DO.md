@@ -34,6 +34,7 @@ For 100%
 
 
 # Stuff changed:
+- Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
 - Updated every page with doctype and better lang support (Kaialogen) 
 - Done some changes to the header section in shop.html (Kaialogen)
 - Removed all `<p>` tags from shop.html as this information is obsolete as it can be found in movie.html (Kaialogen) 
