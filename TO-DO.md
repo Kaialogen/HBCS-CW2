@@ -32,6 +32,8 @@ For 100%
 3. Images Missing and are not of same size
 4. Not all redirects are programmed in
 5. Prices are not displayed in the shop
+6. Some movie Posters are in different languages
+7. Some descriptions in movies.js are not very descriptive
 
 
 # Stuff changed:
