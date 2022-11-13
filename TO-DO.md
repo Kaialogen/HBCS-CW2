@@ -46,3 +46,4 @@ For 100%
 - Added ClearBasket function in basket.html (Kaialogen)
 - Added a nvigation bar to all relevent pages (Kaialogen)
 - Changed shop.html inputs to number types (Kaialogen)  
+- Edited some descriptions in movies.js to be more descriptive (Ernie)
