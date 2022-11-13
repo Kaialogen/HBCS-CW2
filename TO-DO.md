@@ -48,3 +48,16 @@ For 100%
 - Added a nvigation bar to all relevent pages (Kaialogen)
 - Changed shop.html inputs to number types (Kaialogen)  
 - Edited some descriptions in movies.js to be more descriptive (Ernie)
+- New Nav bar (Kaialogen)
+- Payment form (Kaialogen)
+
+# Future stuff
+- Store basket information in local storage - [https://stackoverflow.com/questions/64149597/add-items-to-basket-and-store-in-localstorage-with-javascript]
+- Change login form
+- Create Signup form
+- Create a invoice solution
+- Make logo
+- Implement search function
+- Fix search bar on order.html page
+- Decide how to display films on shop.html
+- Change parameters for the payment form
