@@ -34,7 +34,7 @@ For 100%
 5. Prices are not displayed in the shop
 6. Some movie Posters are in different languages
 7. Some descriptions in movies.js are not very descriptive
-
+8. Prices of movies are different when added to basket
 
 # Stuff changed:
 - Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
