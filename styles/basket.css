@@ -16,3 +16,39 @@
   tbody {
     text-align: left;
   }
+
+  .btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Clear */
+  .clear {
+    border-color: #f44336;
+    color: red;
+  }
+  
+  .clear:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  /* Pay */
+  .pay {
+    border-color: #04AA6D;
+    color: green;
+  }
+  
+  .pay:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .hyper {
+    color: green;
+  }
