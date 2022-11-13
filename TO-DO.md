@@ -32,7 +32,7 @@ For 100%
 3. Images Missing and are not of same size
 4. Not all redirects are programmed in
 5. Prices are not displayed in the shop
-6. Some movie Posters are in different languages
+6. Some movie Posters are in different languages (was joke)
 7. Some descriptions in movies.js are not very descriptive
 8. Prices of movies are different when added to basket
 9. Movies can be added multiple times to the basket
