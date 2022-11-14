@@ -38,6 +38,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
+  background-color: grey;
 }
 #main {
   display: flex;
@@ -49,7 +50,7 @@ body {
 #main > nav,
 #main > aside {
   flex: 0 0 20vw;
-  background: lightgray;
+  background: rgba(211, 211, 211, 0.282);
 }
 #main > nav {
   order: -1;
