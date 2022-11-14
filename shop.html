@@ -47,6 +47,74 @@
         </nav>
       </div>
 
+    <!-- Slideshow Container-->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/Shang-Chi.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+       <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/paw_patrol.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/spider-man3.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/dont-breathe.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/Dark-Knight.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/matrix.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/demonic.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/the-power-of-the-dog.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/spiderman-2.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="image-2" src="/images/wrath-of-man.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>  
+
     <div id="main">
       <article>
         <div class="movie">
@@ -218,7 +286,23 @@
         movie.rentDays = parseInt(document.getElementById("days-to-rent-" + movieId).value);
         basket.push(movie);
         localStorage.setItem("basket", JSON.stringify(basket));
+        
       }
+
+      let slideIndex = 0;
+      showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
     </script>
   </body>
 </html>

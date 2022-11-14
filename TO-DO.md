@@ -50,6 +50,7 @@ For 100%
 - Edited some descriptions in movies.js to be more descriptive (Ernie)
 - New Nav bar (Kaialogen)
 - Payment form (Kaialogen)
+- Added category dropdown (Kaialogen)
 
 # Future stuff
 - Store basket information in local storage - [https://stackoverflow.com/questions/64149597/add-items-to-basket-and-store-in-localstorage-with-javascript]
