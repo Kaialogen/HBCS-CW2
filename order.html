@@ -113,7 +113,7 @@
           <p><a href="#">Product 3</a> <span class="price">£8</span></p>
           <p><a href="#">Product 4</a> <span class="price">£2</span></p>
           <hr>
-          <p>Total <span id="total-price" class="price" style="color:black"><b>£30</b></span></p>
+          <p>Total <span id="total-price" class="price" style="color:black"><b>£</b></span></p>
         </div>
       </div>
     </div>
@@ -137,6 +137,21 @@
 
       return false;
     }
+
+    const container = document.getElementById("payment-details");
+    const paymentDetails = JSON.parse(localStorage.getItem("paymentDetails"));
+
+    const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
+
+    let totalPrice = 0.0;
+
+    basket.forEach((basketItem) => {
+      totalPrice += basketItem.price * basketItem.rentDays;
+    });
+
+    totalPrice *= 1.2;
+
+    document.getElementById("total-price").textContent = totalPrice
 
   </script>
 </html>
