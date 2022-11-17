@@ -53,76 +53,109 @@
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/Shang-Chi.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
        <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/paw_patrol.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/spider-man3.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/dont-breathe.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/Dark-Knight.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/matrix.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/demonic.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/the-power-of-the-dog.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/spiderman-2.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img class="image-2" src="/images/wrath-of-man.jpg" style="width:100%">
-        <div class="text"></div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     
-    </div>  
+    </div> 
+
+<div class="grid-container">    
+  <div class="container">
+    <img src="/images/Shang-Chi.jpg" class="image" style="width:100%">
+    <div class="middle">
+        <div class="text">Price: £2.49 per day</div>
+        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
+        <button style="width: 100px; height: 50px" onclick="addToBasket(1)">Add to Basket</button>
+        <div class="text">Shang-Chi, the master of unarmed weaponry based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization. </div>
+    </div>
+    <div class="top">
+      <div class="text">Shang-Chi and the Legend of the Ten Rings (2021)</div>
+    </div>
+  </div>
+
+ <div class="container">
+    <img src="/images/paw_patrol.jpg" class="image" style="width:100%">
+    <div class="middle">
+        <div class="text">Price: £2.99 per day</div>
+        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
+        <button style="width: 100px; height: 50px" onclick="addToBasket(2)">Add to Basket</button>
+        <div class="text">Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos. </div>
+    </div>
+    <div class="top">
+      <div class="text">PAW Patrol: The Movie</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="/images/spider-man3.jpg" class="image" style="width:100%">
+    <div class="middle">
+        <div class="text">Price: £0.50 per day</div>
+        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
+        <button style="width: 100px; height: 50px" onclick="addToBasket(3)">Add to Basket</button>
+        <div class="text">A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge. </div>
+    </div>
+    <div class="top">
+      <div class="text">Spider Man 3</div>
+    </div>
+  </div>
+
+</div>
+
+
 
     <div id="main">
       <article>
-        <div class="movie">
+<!--       <div class="movie">
           <div>
             <img class="image-1" src="/images/Shang-Chi.jpg" alt=""/>
           </div>
           <div style="margin: 0 0.75em">
-            <br />
             <h4 style="margin: 0">Shang-Chi and the Legend of the Ten Rings (2021)</h4>
           </div>
           <div>
@@ -148,7 +181,7 @@
             <input type="number" id="days-to-rent-2" name="quantity" min="1" max="30" size="3" value="3">
             <button style="width: 100px; height: 50px" onclick="addToBasket(2)">Add to Basket</button>
           </div>
-        </div>
+        </div> -->
         <div class="movie">
           <div>
             <img class="image-1" src="/images/spider-man3.jpg" alt=""/>
@@ -290,7 +323,28 @@
       }
 
       let slideIndex = 0;
+      showSlidesManual(slideIndex);
       showSlides();
+
+function plusSlides(n) {
+  showSlidesManual(slideIndex += n);
+}
+
+function showSlidesManual(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 function showSlides() {
   let i;
@@ -306,3 +360,4 @@ function showSlides() {
     </script>
   </body>
 </html>
+
