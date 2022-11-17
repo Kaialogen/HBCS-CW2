@@ -53,6 +53,8 @@ For 100%
 - Added category dropdown (Kaialogen)
 - Changed Login form (Ernie)
 - Added Signup form (Ernie)
+- Added email validation to sign in and sign up forms (Ernie)
+- Added password comparison in sign up form (Ernie)
 
 # Future stuff
 - Store basket information in local storage - [https://stackoverflow.com/questions/64149597/add-items-to-basket-and-store-in-localstorage-with-javascript]
