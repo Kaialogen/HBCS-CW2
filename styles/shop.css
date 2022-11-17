@@ -86,11 +86,14 @@ margin: 19px auto 0;
   width: 50%;
 }
 
+.right-container {
+  position: relative;
+  width: 50%;
+}
+
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   width: 250px;
@@ -131,8 +134,27 @@ margin: 19px auto 0;
   opacity: 1;
 }
 
+.right-container:hover .image {
+  opacity: 0.3;
+}
+
+.right-container:hover .middle {
+  opacity: 1;
+}
+
+.right-container:hover .top {
+  opacity: 1;
+}
+
 .text {
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1000px 1000px;
+  grid-auto-columns: 1000px;
+  grid-auto-rows: 450px;
 }

@@ -52,7 +52,7 @@
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
-        <img class="image-2" src="/images/shang-chi-banner.jpg" style="width:200%">
+        <img class="image-2" src="/images/Shang-Chi.jpg" style="width:100%">
       </div>
 
        <div class="mySlides fade">
@@ -105,11 +105,12 @@
     
     </div> 
 
-<div>
+<div class="grid-container">    
   <div class="container">
     <img src="/images/Shang-Chi.jpg" class="image" style="width:100%">
     <div class="middle">
         <div class="text">Price: £2.49 per day</div>
+        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
         <button style="width: 100px; height: 50px" onclick="addToBasket(1)">Add to Basket</button>
         <div class="text">Shang-Chi, the master of unarmed weaponry based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization. </div>
     </div>
@@ -117,11 +118,40 @@
       <div class="text">Shang-Chi and the Legend of the Ten Rings (2021)</div>
     </div>
   </div>
+
+ <div class="container">
+    <img src="/images/paw_patrol.jpg" class="image" style="width:100%">
+    <div class="middle">
+        <div class="text">Price: £2.99 per day</div>
+        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
+        <button style="width: 100px; height: 50px" onclick="addToBasket(2)">Add to Basket</button>
+        <div class="text">Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos. </div>
+    </div>
+    <div class="top">
+      <div class="text">PAW Patrol: The Movie</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="/images/spider-man3.jpg" class="image" style="width:100%">
+    <div class="middle">
+        <div class="text">Price: £0.50 per day</div>
+        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
+        <button style="width: 100px; height: 50px" onclick="addToBasket(3)">Add to Basket</button>
+        <div class="text">A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge. </div>
+    </div>
+    <div class="top">
+      <div class="text">Spider Man 3</div>
+    </div>
+  </div>
+
 </div>
+
+
 
     <div id="main">
       <article>
-        <div class="movie">
+<!--       <div class="movie">
           <div>
             <img class="image-1" src="/images/Shang-Chi.jpg" alt=""/>
           </div>
@@ -151,7 +181,7 @@
             <input type="number" id="days-to-rent-2" name="quantity" min="1" max="30" size="3" value="3">
             <button style="width: 100px; height: 50px" onclick="addToBasket(2)">Add to Basket</button>
           </div>
-        </div>
+        </div> -->
         <div class="movie">
           <div>
             <img class="image-1" src="/images/spider-man3.jpg" alt=""/>
@@ -330,3 +360,4 @@ function showSlides() {
     </script>
   </body>
 </html>
+
