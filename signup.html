@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="u-responsive-xl" lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Rentals</title>
+    <link href="/styles/login.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="topnav">
+      <nav>
+            <a class="active" href="shop.html"><i class="fa fa-fw fa-home"></i><strong>Better Netflix</strong></a>
+            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i>View Basket</a>
+            <a href="/login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
+            <div class="dropdown">
+              <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Adventure</a>
+                <a href="#">Animation</a>
+                <a href="#">Science Fiction</a>
+                <a href="#">Comedy</a>
+                <a href="#">Drama</a>
+                <a href="#">Horror</a>
+                <a href="#">Action</a>
+              </div>
+            </div>
+            <input type="text" placeholder="Search..">
+      </nav>
+    </div>
+    <div id="main">
+      <article>
+        <h1 style="text-align: center">Welcome to Movie Rentals!</h1>
+        <div style="background-color: lightgrey; width: 40%; margin: auto; padding: 1em">
+          <form method="GET" action="/shop.html">
+            <label>Email</label><br />
+            <input type="text" name="email" style="width: 100%" required/>
+            <br />
+            <br />
+            <label>Password</label><br />
+            <input type="password" name="password" style="width: 100%" required/>
+            <br />
+            <br />
+            <label>Confirm Password</label><br />
+            <input type="password" name="password2" style="width: 100%" required/>
+            <br />
+            <br />
+            <button type="submit" name="action" value="login" style="width: 45%">Register</button>
+            <br />
+            <br />
+            <div style="width: 100%; text-align: center">
+              <a href="/login.html"><i class="fa fa-fw fa-user"></i>Sign In</a>
+              <a href="/signup.html"><i class="fa fa-fw fa-user"></i>Sign Up</a>
+            </div>
+          </form>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
