@@ -143,6 +143,10 @@ aside {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+.hamburger {
+  position: relative;
+}
+
 /* Add a green background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: white;
