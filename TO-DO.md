@@ -51,11 +51,11 @@ For 100%
 - New Nav bar (Kaialogen)
 - Payment form (Kaialogen)
 - Added category dropdown (Kaialogen)
+- Changed Login form (Ernie)
+- Added Signup form (Ernie)
 
 # Future stuff
 - Store basket information in local storage - [https://stackoverflow.com/questions/64149597/add-items-to-basket-and-store-in-localstorage-with-javascript]
-- Change login form
-- Create Signup form
 - Create a invoice solution
 - Make logo
 - Implement search function
