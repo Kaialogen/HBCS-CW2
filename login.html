@@ -67,8 +67,7 @@
   </body>
   <script>
     function validateEmail() { //Validate email address
-      let check = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signIn.email.value)) //Check email address for correct characters
-      if (check == true) {
+      if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signIn.email.value))) { //Check email address for correct characters
         return true;
       } 
       else {
