@@ -44,7 +44,7 @@
       <article>
         <h1 style="text-align: center">Welcome to Movie Rentals!</h1>
         <div style="background-color: lightgrey; width: 40%; margin: auto; padding: 1em">
-          <form method="GET" action="/shop.html">
+          <form name="signUp" method="GET" action="/shop.html" onsubmit="return validateEmail()" required>
             <label>Email</label><br />
             <input type="text" name="email" style="width: 100%" required/>
             <br />
@@ -69,4 +69,16 @@
       </article>
     </div>
   </body>
+  <script>
+    function validateEmail() { //Validate email address
+      let check = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(signUp.email.value)) //Check email address for correct characters
+      if (check == true) {
+        return true;
+      } 
+      else {
+        alert("Please enter a valid email address")
+        return false;
+      }
+    }
+  </script>
 </html>
