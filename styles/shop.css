@@ -164,8 +164,6 @@ margin: 19px auto 0;
   font-weight: bold;
 }
 
-
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -189,4 +187,3 @@ margin: 19px auto 0;
     max-width: 500%;
   }
 }
-
