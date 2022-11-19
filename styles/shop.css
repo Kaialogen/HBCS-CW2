@@ -83,7 +83,7 @@ margin: 19px auto 0;
 
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .right-container {
@@ -96,9 +96,10 @@ margin: 19px auto 0;
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
-  width: 250px;
- height: 350px; 
+  width: 450px;
+  height: 450px; 
 }
+
 
 .middle {
   transition: .5s ease;
@@ -154,7 +155,25 @@ margin: 19px auto 0;
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1000px 1000px;
-  grid-auto-columns: 1000px;
-  grid-auto-rows: 450px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 5vw);
+  row-gap: 400px;
+  column-gap: 15px;
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .container {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .container {
+    flex: 50%;
+    max-width: 500%;
+  }
+}
+
