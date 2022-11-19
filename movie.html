@@ -38,8 +38,14 @@
           </div>
             <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i>View Basket</a>
             <a href="/login.html"><i class="fa fa-fw fa-user"></i>Login</a>
-            <a href="#"><i class="fa fa-fw fa-search"></i>Search</a>
-            <input type="text" placeholder="Search..">
+
+            <form class="border-white" method="post" onsubmit="submitted()" role="search">
+              <button class="search-button" type="submit">
+                <span class="fa fa-fw fa-search search-button-second">
+                </span>
+              </button>
+              <input class="search text-white" type="text" placeholder="Search">
+            </form>
       </nav>
     </div>
     <!-- navbar div end -->
