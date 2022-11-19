@@ -1,4 +1,4 @@
-.button {
+/* .button {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -6,6 +6,8 @@
   text-decoration: none;
   color: initial;
 }
+
+*/
 
 .movie {
   display: flex;
@@ -34,11 +36,10 @@ https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/tutor
 
 }
 body {
-  display: flex;
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
-  background-color: grey;
+  background-color: #0f171e;
 }
 #main {
   display: flex;
@@ -70,7 +71,7 @@ aside {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #1b2530;
   overflow: hidden;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);;
 }
@@ -94,14 +95,14 @@ aside {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #0f79af;
   color: white;
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #04AA6D;
+  background-color: #0f79af;
   color: white;
 }
 
