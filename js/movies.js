@@ -41,7 +41,7 @@ const movies = [
     description:
       "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
     releaseDate: "04 May 2007",
-    image: "images/spiderman3.jpg",
+    image: "images/spider-man3.jpg",
     price: 0.5,
   },
   {
@@ -83,7 +83,7 @@ const movies = [
     description:
       "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     releaseDate: "31 Mar 1999",
-    image: "images/movies/the_matrix.png",
+    image: "images/matrix.jpg",
     price: 1.79,
   },
   {
@@ -97,7 +97,7 @@ const movies = [
     description:
       "A young woman unleashes terrifying demons when supernatural forces at the root of a decades-old rift between mother and daughter are ruthlessly revealed.",
     releaseDate: "20 Aug 2021",
-    image: "images/movies/demonic.png",
+    image: "images/demonic.jpg",
     price: 0.49,
   },
   {
@@ -111,7 +111,7 @@ const movies = [
     description:
       "Charismatic rancher Phil Burbank inspires fear and awe in those around him. When his brother brings home a new wife and her son, Phil torments them until he finds himself exposed to the possibility of love.",
     releaseDate: "01 Dec 2021",
-    image: "images/movies/the_power_of_the_dog.png",
+    image: "images/the-power-of-the-dog.jpg",
     price: 1.79,
   },
   {
@@ -125,7 +125,7 @@ const movies = [
     description:
       "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.",
     releaseDate: "30 Jun 2004",
-    image: "images/movies/spiderman_2.png",
+    image: "images/spiderman-2.jpg",
     price: 2.49,
   },
   {
@@ -138,7 +138,7 @@ const movies = [
     actors: "Jason Statham, Holt McCallany, Josh Hartnett",
     description: "H is a mysterious man who starts working for a cash moving truck company. He becomes known for using amazing precision and dexterity to neutralise robbers. However, H is actually out for revenge.",
     releaseDate: "07 May 2021",
-    image: "images/movies/wrath_of_man.png",
+    image: "images/wrath-of-man.jpg",
     price: 0.49,
   },
 ];
