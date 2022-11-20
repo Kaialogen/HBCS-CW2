@@ -49,7 +49,7 @@
 
     <div id="main">
       <article>
-        <h1 style="text-align: center">Basket</h1>
+        <h1 style="text-align: center; color: #0f79af;">Basket</h1>
         <div style="background-color: lightgrey; width: 70%; margin: auto; padding: 2em">
           <table style="width: 100%">
             <thead>
@@ -68,7 +68,7 @@
           </div>
           <hr />
           <!-- Changed order and added breaks-->
-          <button a class="btn pay" onclick="window.location.href='/order.html';">Payment</button>
+          <button a class="btn pay" onclick="window.location.href='/order.html';">Proceed to Checkout</button>
           <br />
           <button class="btn clear" onclick="ClearBasket()">Clear Basket</button>
 
@@ -78,35 +78,5 @@
   </body>
 
   <script src="./js/movies.js"></script>
-  <script>
-
-    //added to fix basket reloading
-    function ClearBasket()
-    {
-      //Function to clear basket array and refresh page
-      localStorage.setItem('basket', '[]');
-      window.location.reload();
-    }
-    const basketContainer = document.getElementById("basket");
-
-    const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
-
-    let totalPrice = 0.0;
-
-    basket.forEach((basketItem) => {
-      basketContainer.insertAdjacentHTML(
-        "beforeend",
-        `
-            <tr>
-                <td>${basketItem.name}</td>
-                <td>${basketItem.rentDays}</td>
-                <td>${basketItem.price * basketItem.rentDays}</td>
-            </tr>
-        `
-      );
-      totalPrice += basketItem.price * basketItem.rentDays;
-    });
-    //changed the value of 1.2 to 1 (no clue what the 1.2 did? maybe vat?)
-    document.getElementById("total-price").textContent = totalPrice * 1;
-  </script>
+  <script src="./js/basket.js"></script>
 </html>

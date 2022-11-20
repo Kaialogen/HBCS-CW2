@@ -61,16 +61,16 @@
                 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
                 <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
                 <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input type="text" id="city" name="city" placeholder="New York">
+                <input type="text" id="city" name="city" placeholder="Coventry">
     
                 <div class="row">
                   <div class="col-50">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="NY">
+                    <label for="county">County</label>
+                    <input type="text" id="county" name="county" placeholder="Coventry">
                   </div>
                   <div class="col-50">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" placeholder="10001">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="CV">
                   </div>
                 </div>
               </div>
@@ -110,53 +110,31 @@
           </form>
         </div>
       </div>
+
+
       <div class="col-25">
         <div class="container">
-          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-          <p><a href="#">Product 1</a> <span class="price">£15</span></p>
-          <p><a href="#">Product 2</a> <span class="price">£5</span></p>
-          <p><a href="#">Product 3</a> <span class="price">£8</span></p>
-          <p><a href="#">Product 4</a> <span class="price">£2</span></p>
-          <hr>
-          <p>Total <span id="total-price" class="price" style="color:black"><b>£</b></span></p>
+          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
+          <table style="width: 90%">
+          <thead>
+            <tr style="text-align: left">
+              <th>Movie</th>
+              <th>Days</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody style="text-align: left" id="basket">
+        </tbody>
+        </table>
+        <hr>
+          <strong>Total Price:</strong> £<span id="total-price">00.00</span>
         </div>
       </div>
+
+
+
     </div>
   </body>
 
-  <script>
-
-
-
-
-    function storeData() {
-      // Collect all form data for use in the invoice
-      const formInputs = ["title", "firstName", "surname", "addressNumber", "addressStreet", "addressPostcode", "addressCountry", "addressCity", "cardNumber", "expiryMonth", "expiryYear"];
-      const formData = {};
-      formInputs.forEach((inputId) => {
-        formData[inputId] = document.getElementById(inputId).value;
-      })
-      formData.card = document.querySelector("input[name=card]:checked").value;
-      
-      localStorage.setItem("paymentDetails", JSON.stringify(formData));
-
-      return false;
-    }
-
-    const container = document.getElementById("payment-details");
-    const paymentDetails = JSON.parse(localStorage.getItem("paymentDetails"));
-
-    const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
-
-    let totalPrice = 0.0;
-
-    basket.forEach((basketItem) => {
-      totalPrice += basketItem.price * basketItem.rentDays;
-    });
-
-    totalPrice *= 1.2;
-
-    document.getElementById("total-price").textContent = totalPrice
-
-  </script>
+  <script src="./js/order.js"></script>
 </html>
