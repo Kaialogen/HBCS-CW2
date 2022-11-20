@@ -12,10 +12,9 @@ const movies = [
     director: "Destin Daniel Cretton",
     writer: "Dave Callaham, Destin Daniel Cretton, Andrew Lanham",
     actors: "Simu Liu, Awkwafina, Tony Chiu-Wai Leung",
-    description:
-      "Shang-Chi, the master of unarmed weaponry based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
+    description: "Shang-Chi, master of Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
     releaseDate: "03 Sep 2021",
-    image: "https://via.placeholder.com/150x150",
+    image: "images/Shang-Chi.jpg",
     price: 2.49,
   },
   {
@@ -26,9 +25,9 @@ const movies = [
     director: "Cal Brunker",
     writer: "Bob Barlen, Cal Brunker, Billy Frolick",
     actors: "Iain Armitage, Will Brisbin, Ron Pardo",
-    description: "Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos.",
+    description: "Ryder and his team of six intelligent puppies set out to stop Mayor Humdinger from wreaking havoc in the bustling metropolis.",
     releaseDate: "20 Aug 2021",
-    image: "https://via.placeholder.com/350x250",
+  image: "images/paw_patrol.jpg",
     price: 2.99,
   },
   {
@@ -42,7 +41,7 @@ const movies = [
     description:
       "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
     releaseDate: "04 May 2007",
-    image: "https://via.placeholder.com/250x250",
+    image: "images/spiderman3.jpg",
     price: 0.5,
   },
   {
@@ -56,7 +55,7 @@ const movies = [
     description:
       "Hoping to walk away with a massive fortune, a trio of thieves break into the house of a blind man who isn't as helpless as he seems.",
     releaseDate: "26 Aug 2016",
-    image: "https://via.placeholder.com/250x150",
+    image: "images/dont-breathe.jpg",
     price: 1.29,
   },
   {
@@ -70,7 +69,7 @@ const movies = [
     description:
       "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
     releaseDate: "18 Jul 2008",
-    image: "https://via.placeholder.com/150x150",
+    image: "images/Dark-Knight.jpg",
     price: 2.99,
   },
   {
@@ -84,7 +83,7 @@ const movies = [
     description:
       "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     releaseDate: "31 Mar 1999",
-    image: "https://via.placeholder.com/150x150",
+    image: "images/movies/the_matrix.png",
     price: 1.79,
   },
   {
@@ -98,7 +97,7 @@ const movies = [
     description:
       "A young woman unleashes terrifying demons when supernatural forces at the root of a decades-old rift between mother and daughter are ruthlessly revealed.",
     releaseDate: "20 Aug 2021",
-    image: "https://via.placeholder.com/250x250",
+    image: "images/movies/demonic.png",
     price: 0.49,
   },
   {
@@ -112,7 +111,7 @@ const movies = [
     description:
       "Charismatic rancher Phil Burbank inspires fear and awe in those around him. When his brother brings home a new wife and her son, Phil torments them until he finds himself exposed to the possibility of love.",
     releaseDate: "01 Dec 2021",
-    image: "https://via.placeholder.com/250x250",
+    image: "images/movies/the_power_of_the_dog.png",
     price: 1.79,
   },
   {
@@ -126,7 +125,7 @@ const movies = [
     description:
       "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.",
     releaseDate: "30 Jun 2004",
-    image: "https://via.placeholder.com/250x150",
+    image: "images/movies/spiderman_2.png",
     price: 2.49,
   },
   {
@@ -137,9 +136,9 @@ const movies = [
     director: "Guy Ritchie",
     writer: "Nicolas Boukhrief, Éric Besnard, Guy Ritchie",
     actors: "Jason Statham, Holt McCallany, Josh Hartnett",
-    description: "The plot follows H, a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week.",
+    description: "H is a mysterious man who starts working for a cash moving truck company. He becomes known for using amazing precision and dexterity to neutralise robbers. However, H is actually out for revenge.",
     releaseDate: "07 May 2021",
-    image: "https://via.placeholder.com/250x50",
+    image: "images/movies/wrath_of_man.png",
     price: 0.49,
   },
 ];

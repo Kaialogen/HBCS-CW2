@@ -11,12 +11,17 @@ margin: 19px auto 0;
   margin: 19px auto 0;
 }
 
+.image-3 {
+  width: 800px;
+  height: 350px;
+  margin: 19px auto 0;
+}
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 2000px;
+  max-width: 1800px;
   position: relative; /*was relative */
   margin: auto;
 }
@@ -254,4 +259,15 @@ margin: 19px auto 0;
   border-color: #008296;
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
   outline: 0;
+}
+
+.text-block {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 600px;
 }
