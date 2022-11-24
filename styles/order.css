@@ -96,3 +96,9 @@
       margin-bottom: 20px;
     }
   }
+
+  .order-main{
+    position: absolute;
+    width: 1300px;
+    padding: 100px;
+  }
