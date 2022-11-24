@@ -161,6 +161,7 @@ aside {
   padding: 14px 16px;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+  cursor: pointer;
 }
 
 /* Dropdown content (hidden by default) */
