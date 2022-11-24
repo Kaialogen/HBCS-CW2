@@ -107,11 +107,18 @@ aside {
   float: right;
   background-color: #0f79af;
   color: white;
+  padding: 14px 16px;
+  font-size: 32px;
+  border: none;
+  outline: none;
 }
 
 .topnav a.split-2 {
   float: right;
   color: white;
+  font-size: 32px;
+  border: none;
+  outline: none;
 }
 
 @media screen and (max-width: 500px) {
