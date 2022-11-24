@@ -63,8 +63,8 @@ For 100%
  11. ~~Cancel button goes back to shop.html, it should go back to basket.html~~
 
 
-- [x] 
-- [] 
+- [x] data
+- [ ] data
 # Stuff changed:
 - Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
 - Updated every page with doctype and better lang support (Kaialogen) 
