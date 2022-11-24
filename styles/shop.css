@@ -23,6 +23,7 @@ margin: 19px auto 0;
 .slideshow-container {
   max-width: 1800px;
   position: relative; /*was relative */
+  top: 60px;
   margin: auto;
 }
 
@@ -89,6 +90,7 @@ margin: 19px auto 0;
 .container {
   position: relative;
   width: 100%;
+  top: 70px;
 }
 
 .right-container {
