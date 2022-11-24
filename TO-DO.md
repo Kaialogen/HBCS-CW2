@@ -27,44 +27,43 @@ For 100%
 
 # Issues:
 
-1. ~~Change login.html to shop.html for the front page, this makes the website more user friendly as they can see content before a restriction.~~
-3. ~~Images Missing and are not of same size.~~
-5. ~~Prices are not displayed in the shop page - this means users have to add items to basket before knowing price.~~
-6. Some movie Posters are in different languages (was joke, need to change)
-7. Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
-9. Movies can be added multiple times to the basket
-10. Days to rent has ~~no input sanitation~~ aand has no cap on number of days to add.
-11. Add to basket button has no feedback at whether a item has been added or not.
-12. Genres have a big presence but has no functionality. 
-13. ~~Nav bar is fixed, not dynamic leading to user issues.~~
+- [x] Change login.html to shop.html for the front page, this makes the website more user friendly as they can see content before a restriction.
+- [x] Images Missing and are not of same size.
+- [x] Prices are not displayed in the shop page - this means users have to add items to basket before knowing price.
+- [ ] Some movie Posters are in different languages (was joke, need to change)
+- [ ] Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
+- [ ] Movies can be added multiple times to the basket
+- [ ] Days to rent has no input sanitation~aand has no cap on number of days to add.
+- [ ] Add to basket button has no feedback at whether a item has been added or not.
+- [ ] Genres have a big presence but has no functionality. 
+- [x] Nav bar is fixed, not dynamic leading to user issues.
 
  ## Basket:
- 1. ~~Clear basket button does not work.~~
- 2. ~~Continue shopping button does not go back to shop.html~~
- 3. ~~Go to payment link is bland and just a link.~~
- 4. ~~Time should be changed to days to give a user quantifiable data.~~
- 5. ~~Column headers are not lined up.~~
- 6. ~~Price column is lacking currency indicator.~~
- 7. ~~Nav bar is not present. ~~
- 8. ~~Prices of movies are different when added to basket (logic error with decimal points)~~
- 9. ~~clear basket button too small.~~
+ - [x] Clear basket button does not work.
+ - [x] Continue shopping button does not go back to shop.html
+ - [x] Go to payment link is bland and just a link.
+ - [x] Time should be changed to days to give a user quantifiable data.
+ - [x] Column headers are not lined up.
+ - [x] Price column is lacking currency indicator.
+ - [x] Nav bar is not present. 
+ - [x] Prices of movies are different when added to basket (logic error with decimal points)
+ - [x] clear basket button too small.
 
  ## Order:
- 1. ~~Input boxes are not lined up.~~
- 2. ~~Input boxes are not clearly labelled, with one being unlabelled.~~
- 3. ~~no suggestion data is present within the input boxes.~~
- 4. ~~ Buttons are too small.~~
- 5. ~~Card number input box has the wrong input type.~~
- 6. ~~Lack of navbar.~~
- 7. ~~No indicator of what is in the basket currently.~~
- 8. ~~No indicator of cost.~~
- 9. ~~Missing input boxes such as name on card, email.~~
- 10. ~~ Input boxes are not in logical order.~~
- 11. ~~Cancel button goes back to shop.html, it should go back to basket.html~~
+ - [x] Input boxes are not lined up.
+ - [x] Input boxes are not clearly labelled, with one being unlabelled.
+ - [x] no suggestion data is present within the input boxes.
+ - [x]  Buttons are too small.
+ - [x] Card number input box has the wrong input type.
+ - [x] Lack of navbar.
+ - [x] No indicator of what is in the basket currently.
+ - [x] No indicator of cost.
+ - [x] Missing input boxes such as name on card, email.
+ - [x] Input boxes are not in logical order.
+ - [x] Cancel button goes back to shop.html, it should go back to basket.html
 
 
-- [x] data
-- [ ] data
+ data
 # Stuff changed:
 - Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
 - Updated every page with doctype and better lang support (Kaialogen) 
