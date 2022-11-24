@@ -91,3 +91,4 @@ For 100%
 - Fix search bar on order.html page
 - Decide how to display films on shop.html
 - Change parameters for the payment form
+- Visual indicator for when items are added to basket
