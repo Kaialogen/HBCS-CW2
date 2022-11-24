@@ -33,10 +33,16 @@ https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/tutor
   font-family: Arial, Helvetica, sans-serif;
 
 }
+
+html {
+  position: absolute;
+  min-height: 100%;
+
+}
+
 body {
-  min-height: 100vh;
   flex-direction: column;
-  margin: 0;
+  margin: 0 0 100px;
   background-color: #0f171e;
 }
 #main {
@@ -239,6 +245,7 @@ aside {
 }
 
 .footer {
+  position: absolute;
   padding: 1em;
   display: block;
   width: 100%;
