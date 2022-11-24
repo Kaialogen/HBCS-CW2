@@ -1,0 +1,48 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+.text-title {
+    color: white;
+    font-size: 50px;
+    padding: 16px 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+summary {
+    color:aliceblue;
+}
+
+.text {
+    color:aliceblue;
+}
+
+details {
+    background: #7193cb;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+  }
+  
+summary {
+    cursor: pointer;
+  }
+  
+summary > * {
+    display: inline;
+  }
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}

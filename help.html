@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="u-responsive-xl" lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Rentals</title>
+    <link href="/styles/help.css" rel="stylesheet" />
+    <link href="/styles/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="topnav">
+      <nav>
+            <a class="active" href="shop.html"><i class="fa fa-fw fa-home"></i><strong>Better Netflix</strong></a>
+            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i>View Basket</a>
+            <a href="/login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+            <div class="dropdown">
+              <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Adventure</a>
+                <a href="#">Animation</a>
+                <a href="#">Science Fiction</a>
+                <a href="#">Comedy</a>
+                <a href="#">Drama</a>
+                <a href="#">Horror</a>
+                <a href="#">Action</a>
+              </div>
+            </div>
+            <form class="border-white" method="post" onsubmit="submitted()" role="search">
+              <button class="search-button" type="submit">
+                <span class="fa fa-fw fa-search search-button-second">
+                </span>
+              </button>
+              <input class="search text-white" type="text" placeholder="Search">
+            </form>
+      </nav>
+    </div>
+
+    <script>
+
+        function toggleElement(id)
+        {
+            if(document.getElementById(id).style.display == 'none')
+            {
+                document.getElementById(id).style.display = '';
+            }
+            else
+            {
+                document.getElementById(id).style.display = 'none';
+            }
+        }
+    </script>
+
+    <div id="main">
+
+
+    <div id="main">
+        <article>
+            
+            <h1 style="text-align: center; color: white;">FAQ</h1>
+        
+            <details>
+                <summary><strong>How do I create an account?</strong></summary>
+                <div class="text"><em>An account can be opened through the login portal, by selecting don't have an account. </em></div>
+            </details>
+            <details>
+                <summary><strong>Can an account be used by more than one person?</strong></summary>
+                <div class="text"><em> No, only one person should have access to an account. </em></div>
+            </details>
+            <details>
+                <summary><strong>Can I watch a movie more than one time?</strong></summary>
+                <div class="text"><em>Yes, you can watch a movie as many times as you want during your rental period.</em></div>
+            </details>
+            <details>
+                <summary><strong>Am I allowed to use multiple devices?</strong></summary>
+                <div class="text"><em>Yes, you can log on and watch on multiple devices but not at the same time.</em></div>
+            </details>
+            <details>
+                <summary><strong>Will more movies be added?</strong></summary>
+                <div class="text"><em>Yes we intend to add more movies in the future, although there is not a fixed date for this.</em></div>
+            </details>
+
+            <img src="/images/HelpPage.png" class="center">
+        </article>
+    </div>
+
+
+
+    </body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<footer class="footer">
+    <a href="/help.html"> FAQ </a>
+</footer>
+
+</html>
