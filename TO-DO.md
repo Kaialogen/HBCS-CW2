@@ -27,19 +27,35 @@ For 100%
 
 # Issues:
 
-1. Change login.html to shop.html for the front page. 
-2. Give each Page a subdirectory/css file and add image folder
-3. Images Missing and are not of same size
-4. Not all redirects are programmed in
-5. Prices are not displayed in the shop
-6. Some movie Posters are in different languages (was joke)
-7. Some descriptions in movies.js are not very descriptive
-8. Prices of movies are different when added to basket
+1. Changed login.html to shop.html for the front page, this makes the website more user friendly as they can see content before a restriction.
+3. Images Missing and are not of same size.
+5. Prices are not displayed in the shop page - this means users have to add items to basket before knowing price.
+6. Some movie Posters are in different languages (was joke, need to change)
+7. Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
 9. Movies can be added multiple times to the basket
+10. Days to rent has no input sanitation aand has no cap on number of days to add.
+11. Add to basket button has no feedback at whether a item has been added or not.
+12. Genres have a big presence but has no functionality. 
+13. Nav bar is fixed, not dynamic leading to user issues.
+
+ ## Basket:
+ 1. Clear basket button does not work.
+ 2. Continue shopping button does not go back to shop.html
+ 3. Go to payment link is bland and just a link.
+ 4. Time should be changed to days to give a user quantifiable data.
+ 5. Column headers are not lined up.
+ 6. Price column is lacking currency indicator.
+ 7. Nav bar is not present. 
+ 8. Prices of movies are different when added to basket (logic error with decimal points)
+ 9. clear basket button too small.
+
+ ## Order:
+
 
 # Stuff changed:
 - Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
 - Updated every page with doctype and better lang support (Kaialogen) 
+- Give each Page a subdirectory/css file and add image folder. (Kaialogen)
 - Done some changes to the header section in shop.html (Kaialogen)
 - Removed all `<p>` tags from shop.html as this information is obsolete as it can be found in movie.html (Kaialogen) 
 - Added images and added a css class in shop.css to size all images to width 250px and height 350px (Kaialogen)
