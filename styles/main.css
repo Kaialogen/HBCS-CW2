@@ -44,6 +44,7 @@ body {
   flex-direction: column;
   margin: 0 0 100px;
   background-color: #0f171e;
+  padding: 0px;
 }
 #main {
   display: flex;
@@ -245,14 +246,17 @@ aside {
   height: 20%;
 }
 
-.footer {
+footer {
   position: absolute;
-  padding: 1em;
-  display: block;
+  left: 0px;
+  bottom: 0px;
+  padding: 3px;
   width: 100%;
+  height: 80px;
   background-color: #1b2530;
   color: white;
   text-align: center;
-  clear: both;
   }
+
+
 
