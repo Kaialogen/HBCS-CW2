@@ -8,6 +8,7 @@
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     margin: 0 -16px;
+    top: 60px;
   } 
   
   .col-25 {
@@ -94,4 +95,10 @@
     .col-25 {
       margin-bottom: 20px;
     }
+  }
+
+  .order-main{
+    position: absolute;
+    width: 1300px;
+    padding: 80px;
   }

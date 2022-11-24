@@ -17,35 +17,38 @@
   </head>
 
   <body>
-    <div class="topnav">
-      <nav>
-            <a class="active" href="shop.html"><i class="fa fa-fw fa-home"></i><strong>Better Netflix</strong></a>
-            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i>View Basket</a>
-            <a href="/login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+        <!-- navbar div start -->
+        <div class="topnav">
+          <nav> 
             <div class="dropdown">
-              <button class="dropbtn">Categories
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Adventure</a>
-                <a href="#">Animation</a>
-                <a href="#">Science Fiction</a>
-                <a href="#">Comedy</a>
-                <a href="#">Drama</a>
-                <a href="#">Horror</a>
-                <a href="#">Action</a>
+                <button class="dropbtn" onclick="location.href='/shop.html';">
+                  Netflix
+                  <div class="hamburger">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Adventure</a>
+                  <a href="#">Animation</a>
+                  <a href="#">Science Fiction</a>
+                  <a href="#">Comedy</a>
+                  <a href="#">Drama</a>
+                  <a href="#">Horror</a>
+                  <a href="#">Action</a>
+                </div>
               </div>
-            </div>
-            <form class="border-white" method="post" onsubmit="submitted()" role="search">
-              <button class="search-button" type="submit">
-                <span class="fa fa-fw fa-search search-button-second">
-                </span>
-              </button>
-              <input class="search text-white" type="text" placeholder="Search">
-            </form>
-      </nav>
-    </div>
-
+                <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i></a>
+                <a href="/login.html" class="split-2"><i class="fa fa-fw fa-user"></i></a>
+    
+                <form class="border-white" method="post" onsubmit="submitted()" role="search">
+                  <i class="fa fa-fw fa-search search-button-second"></i>
+                  <input class="search text-white" type="text" placeholder="Search">
+                </form>
+          </nav>
+        </div>
+        <!-- navbar div end -->
+  <div class="order-main">
+    <h1 style="text-align: center; color: #0f79af;">Basket</h1>
     <div class="row">
       <div class="col-75">
         <div class="container">
@@ -74,7 +77,7 @@
               </div>
     
               <div class="col-50">
-                <h3>Payment</h3>
+                <h3>Card Info</h3>
                 <label for="fname">Accepted Cards</label>
                 <div class="icon-container">
                   <i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -131,6 +134,9 @@
 
 
     </div>
+  </div>  
+
+
   </body>
 
   <script src="./js/order.js"></script>

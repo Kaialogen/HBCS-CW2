@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Rentals</title>
-    <link href="/styles/login.css" rel="stylesheet" />
+    <link href="/styles/signup.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,35 +17,37 @@
   </head>
 
   <body>
+    <!-- navbar div start -->
     <div class="topnav">
-      <nav>
-            <a class="active" href="shop.html"><i class="fa fa-fw fa-home"></i><strong>Better Netflix</strong></a>
-            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i>View Basket</a>
-            <a href="/login.html"><i class="fa fa-fw fa-user"></i>Login</a>
-            <div class="dropdown">
-              <button class="dropbtn">Categories
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Adventure</a>
-                <a href="#">Animation</a>
-                <a href="#">Science Fiction</a>
-                <a href="#">Comedy</a>
-                <a href="#">Drama</a>
-                <a href="#">Horror</a>
-                <a href="#">Action</a>
+      <nav> 
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='/shop.html';">
+              Netflix
+              <div class="hamburger">
+                <i class="fa fa-bars"></i>
               </div>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Adventure</a>
+              <a href="#">Animation</a>
+              <a href="#">Science Fiction</a>
+              <a href="#">Comedy</a>
+              <a href="#">Drama</a>
+              <a href="#">Horror</a>
+              <a href="#">Action</a>
             </div>
+          </div>
+            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i></a>
+            <a href="/login.html" class="split-2"><i class="fa fa-fw fa-user"></i></a>
+
             <form class="border-white" method="post" onsubmit="submitted()" role="search">
-              <button class="search-button" type="submit">
-                <span class="fa fa-fw fa-search search-button-second">
-                </span>
-              </button>
+              <i class="fa fa-fw fa-search search-button-second"></i>
               <input class="search text-white" type="text" placeholder="Search">
             </form>
       </nav>
     </div>
-    <div id="main">
+    <!-- navbar div end -->
+    <div class="signup-main">
       <article>
         <h1 style="text-align: center; color: white;">Welcome to Movie Rentals!</h1>
         <div style="background-color: lightgrey; width: 40%; margin: auto; padding: 1em; border-radius: 25px;">

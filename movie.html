@@ -21,12 +21,12 @@
     <div class="topnav">
       <nav> 
         <div class="dropdown">
-            <a class="active" href="shop.html">
+            <button class="dropbtn" onclick="location.href='/shop.html';">
               Netflix
               <div class="hamburger">
                 <i class="fa fa-bars"></i>
               </div>
-            </a>
+            </button>
             <div class="dropdown-content">
               <a href="#">Adventure</a>
               <a href="#">Animation</a>
@@ -37,14 +37,11 @@
               <a href="#">Action</a>
             </div>
           </div>
-            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i>View Basket</a>
-            <a href="/login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+            <a href="/basket.html" class="split"><i class="fa fa-fw fa-shopping-basket"></i></a>
+            <a href="/login.html" class="split-2"><i class="fa fa-fw fa-user"></i></a>
 
             <form class="border-white" method="post" onsubmit="submitted()" role="search">
-              <button class="search-button" type="submit">
-                <span class="fa fa-fw fa-search search-button-second">
-                </span>
-              </button>
+              <i class="fa fa-fw fa-search search-button-second"></i>
               <input class="search text-white" type="text" placeholder="Search">
             </form>
       </nav>
@@ -66,6 +63,7 @@
         <p  class="text-white" id="movie-price"></p>
         <img class="image-1" id="movie-image" src="" />
         <p  class="text-white" id="movie-description"></p>
+        <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket()">Add to Basket</button>
       </article>
     </div>
   </body>

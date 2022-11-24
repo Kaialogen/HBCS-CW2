@@ -48,3 +48,9 @@
     background-color: #04AA6D;
     color: white;
   }
+
+  .basket {
+    position: absolute;
+    width: 1300px;
+    padding: 50px;
+  }
