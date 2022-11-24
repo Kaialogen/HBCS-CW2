@@ -138,6 +138,7 @@ aside {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
+  color: white;
 }
 
 /* The dropdown container */
@@ -156,10 +157,6 @@ aside {
   padding: 14px 16px;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
-}
-
-.hamburger {
-  position: relative;
 }
 
 /* Dropdown content (hidden by default) */
