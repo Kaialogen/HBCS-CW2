@@ -55,13 +55,6 @@ body {
   order: -1;
 }
 header,
-footer {
-  background: red;
-  height: 5vh;
-  color: white;
-}
-header,
-footer,
 article,
 aside {
   padding: 1em;
@@ -247,11 +240,12 @@ aside {
 }
 
 .footer {
-  position: absolute;
-  top: 3000px;
+  padding: 1em;
+  display: block;
   width: 100%;
   background-color: #1b2530;
   color: white;
   text-align: center;
+  clear: both;
   }
 
