@@ -50,6 +50,17 @@ For 100%
  9. clear basket button too small.
 
  ## Order:
+ 1. Input boxes are not lined up.
+ 2. Input boxes are not clearly labelled, with one being unlabelled.
+ 3. no suggestion data is present within the input boxes.
+ 4. Buttons are too small.
+ 5. Card number input box has the wrong input type.
+ 6. Lack of navbar.
+ 7. No indicator of what is in the basket currently.
+ 8. No indicator of cost.
+ 9. Missing input boxes such as name on card, email.
+ 10. Input boxes are not in logical order.
+ 11. Cancel button goes back to shop.html, it should go back to basket.html
 
 
 # Stuff changed:
