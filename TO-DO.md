@@ -37,6 +37,7 @@ For 100%
 - [ ] Add to basket button has no feedback at whether a item has been added or not.
 - [ ] Genres have a big presence but has no functionality. 
 - [x] Nav bar is fixed, not dynamic leading to user issues.
+- [ ] Able to continue to payment with nothing in the basket
 
  ## Basket:
  - [x] Clear basket button does not work.
