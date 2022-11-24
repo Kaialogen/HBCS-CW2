@@ -27,16 +27,22 @@ For 100%
 
 # Issues:
 
-- [x] Change login.html to shop.html for the front page, this makes the website more user friendly as they can see content before a restriction.
-- [x] Images Missing and are not of same size.
-- [x] Prices are not displayed in the shop page - this means users have to add items to basket before knowing price.
-- [ ] Some movie Posters are in different languages (was joke, need to change)
-- [ ] Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
-- [ ] Movies can be added multiple times to the basket
-- [ ] Days to rent has no input sanitation~aand has no cap on number of days to add.
-- [ ] Add to basket button has no feedback at whether a item has been added or not.
-- [ ] Genres have a big presence but has no functionality. 
-- [x] Nav bar is fixed, not dynamic leading to user issues.
+ ## General issues:
+ - [x] Change login.html to shop.html for the front page, this makes the website more user friendly as they can see content before a restriction.
+ - [ ] Movies can be added multiple times to the basket
+ - [x] Nav bar is fixed, not dynamic leading to user issues.
+
+ ## Shop:
+ - [x] Images Missing and are not of same size.
+ - [x] Prices are not displayed in the shop page - this means users have to add items to basket before knowing price.
+ - [] Some movie Posters are in different languages (was joke, need to change)
+ - [] Days to rent has no input sanitation~aand has no cap on number of days to add.
+ - [] Add to basket button has no feedback at whether a item has been added or not.
+ - [] Genres have a big presence but has no functionality.
+
+ ## Movies:
+ - [] Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
+ - [] style of 
 
  ## Basket:
  - [x] Clear basket button does not work.
@@ -48,6 +54,7 @@ For 100%
  - [x] Nav bar is not present. 
  - [x] Prices of movies are different when added to basket (logic error with decimal points)
  - [x] clear basket button too small.
+ - [ ] Able to continue to payment with nothing in the basket
 
  ## Order:
  - [x] Input boxes are not lined up.
@@ -62,8 +69,6 @@ For 100%
  - [x] Input boxes are not in logical order.
  - [x] Cancel button goes back to shop.html, it should go back to basket.html
 
-
- data
 # Stuff changed:
 - Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
 - Updated every page with doctype and better lang support (Kaialogen) 
