@@ -89,6 +89,7 @@ For 100%
 - Added Signup form (Ernie)
 - Added email validation to sign in and sign up forms (Ernie)
 - Added password comparison in sign up form (Ernie)
+- Added FAQ (Louis)
 
 # Future stuff
 - Store basket information in local storage - [https://stackoverflow.com/questions/64149597/add-items-to-basket-and-store-in-localstorage-with-javascript]
