@@ -92,3 +92,4 @@ For 100%
 - Decide how to display films on shop.html
 - Change parameters for the payment form
 - Visual indicator for when items are added to basket
+- Custom 404 page
