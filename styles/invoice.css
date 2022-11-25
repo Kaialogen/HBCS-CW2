@@ -1,0 +1,9 @@
+.invoice{
+    position: absolute;
+    width: 1300px;
+    padding: 50px;
+  }
+
+#payment-details{
+    color: white;
+}
