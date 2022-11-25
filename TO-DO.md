@@ -69,6 +69,7 @@ For 100%
  - [x] Missing input boxes such as name on card, email.
  - [x] Input boxes are not in logical order.
  - [x] Cancel button goes back to shop.html, it should go back to basket.html
+ - [ ] Search text is not formatted correctly
 
 # Stuff changed:
 - Added index.html page with a redirect to shop.html to help users get to the right page (Kaialogen)
