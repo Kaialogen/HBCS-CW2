@@ -102,3 +102,7 @@
     width: 1300px;
     padding: 80px;
   }
+
+  .search-text {
+    top: 7px;
+  }

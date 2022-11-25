@@ -215,7 +215,6 @@ aside {
   min-width: 0;
   outline: 0;
   background: transparent;
-  top: 0px;
 }
 
 /* Search bar whole - new name (originally border-white) changed to search-bar */
@@ -239,7 +238,7 @@ aside {
 /* Search bar icon - was originally search-button */
 .search-icon {
   color: #ffffff !important;
-  padding: 11px;
+  padding: 12px;
   box-sizing: content-box;
   width: 100%;
   height: 20%;
