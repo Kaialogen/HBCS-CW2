@@ -194,22 +194,20 @@ aside {
   display: block;
 }
 
-/*search bar */
-.search {
+/*search bar text */
+.search-text {
   flex: 1;
   position: relative;
   border: 0;
   margin: 5px;
   min-width: 0;
   outline: 0;
-  background: transparent; 
+  background: transparent;
+  top: 0px;
 }
 
-.text-white {
-  color: #ffffff;
-}
-
-.border-white {
+/* Search bar whole - new name (originally border-white) changed to search-bar */
+.search-bar {
   display: flex;
   position: relative;
   top: 10px;
@@ -226,24 +224,17 @@ aside {
   height: 45px;
 }
 
-.search-button {
-  cursor: pointer;
-  position: relative;
-  flex: 0;
-  background: none;
-  border: 0;
-  padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.search-button-second {
+/* Search bar icon - was originally search-button */
+.search-icon {
   color: #ffffff !important;
   padding: 10px;
   box-sizing: content-box;
   width: 100%;
   height: 20%;
+}
+
+.text-white {
+  color: #ffffff;
 }
 
 footer {
@@ -259,4 +250,18 @@ footer {
   }
 
 
+
+  /* SEARCH BUTTON NOW NO LONGER USED 
+  
+  .search-button {
+  cursor: pointer;
+  position: relative;
+  flex: 0;
+  background: none;
+  border: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
