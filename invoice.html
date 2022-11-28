@@ -54,7 +54,7 @@
         <h1 style="text-align: center; color: #0f79af;">Viewing Invoice for Movie Rental</h1>
         <div id="payment-details">
           <p>
-            <span id="payment-details-title"></span> <span id="payment-details-firstName"></span> <span id="payment-details-surname"></span>
+            <span id="payment-details-title"></span> <span id="fname"></span> <span id="payment-details-surname"></span>
           </p>
           <p>
             <span id="payment-details-addressNumber"></span> <span id="payment-details-addressStreet"></span>
@@ -89,8 +89,7 @@
 
     // Update the DOM with the payment details
     document.getElementById("payment-details-title").textContent = paymentDetails.title;
-    document.getElementById("payment-details-firstName").textContent = paymentDetails.firstName;
-    document.getElementById("payment-details-surname").textContent = paymentDetails.surname;
+    document.getElementById("fname").textContent = paymentDetails.fname;
     document.getElementById("payment-details-addressNumber").textContent = paymentDetails.addressNumber;
     document.getElementById("payment-details-addressStreet").textContent = paymentDetails.addressStreet;
     document.getElementById("payment-details-addressPostcode").textContent = paymentDetails.addressPostcode;
