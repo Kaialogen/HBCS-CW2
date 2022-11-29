@@ -55,7 +55,7 @@ For 100%
  - [x] Nav bar is not present. 
  - [x] Prices of movies are different when added to basket (logic error with decimal points)
  - [x] clear basket button too small.
- - [ ] Able to continue to payment with nothing in the basket
+ - [x] Able to continue to payment with nothing in the basket
 
  ## Order:
  - [x] Input boxes are not lined up.
