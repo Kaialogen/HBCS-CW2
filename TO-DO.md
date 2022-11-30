@@ -43,7 +43,7 @@ For 100%
  ## Movies:
  - [ ] Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
  - [ ] Style of movies page is still very basic
- - [ ] No options to add movie to basket from this page
+ - [x] No options to add movie to basket from this page
 
  ## Basket:
  - [x] Clear basket button does not work.

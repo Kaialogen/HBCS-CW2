@@ -64,8 +64,8 @@
         <p  class="text-white" id="movie-price"></p>
         <img class="image-1" id="movie-image" src="" />
         <p  class="text-white" id="movie-description"></p>
-        <input type="number" id="days-to-rent" name="quantity" min="1" max="30" size="3" value="3">
-        <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(1)">Add to Basket</button>
+        <input type="number" id="days-to-rent-x" name="quantity" min="1" max="30" size="3" value="3">
+        <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(movieId)">Add to Basket</button>
       </article>
     </div>
   </body>
@@ -79,6 +79,7 @@
     const movieId = parseInt(urlParams.get("id"));
     const movie = movies.find((movie) => movie.id === movieId);
 
+    document.getElementById("days-to-rent-x").id = "days-to-rent-" + movieId.toString(); 
     document.getElementById("movie-title").textContent = movie.name;
     document.getElementById("movie-image").src = movie.image;
     document.getElementById("movie-genre").textContent = movie.genre;
