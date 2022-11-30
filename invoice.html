@@ -65,7 +65,35 @@
             <span id="payment-details-expiryMonth"></span>/<span id="payment-details-expiryYear"></span>
           </p>
           <br />
-          <p>Paid <span id="total-price"></span></p>
+        </div>
+        <div style="width: 100%; margin: auto; padding: 2em">
+          <table style="width: 90%">
+            <thead>
+              <tr style="text-align: left">
+                <th>Movie</th>
+                <th>Days</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody style="text-align: left" id="basket">
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+              
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+              </tbody>
+          </table>
+          <hr>
+          <div style="text-align: left">
+            <strong>Total Price:</strong> £<span id="total-price"></span>
+          </div>
+          <hr>
         </div>
       </article>
     </div>
@@ -80,13 +108,24 @@
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
 
     let totalPrice = 0.0;
-    let itenPrice = 0.0;
+    let itemPrice = 0.0;
 
     // Get all the prices of the movie in the basket
     basket.forEach((basketItem) => {
         itemPrice = basketItem.price * basketItem.rentDays;
         itemPrice = itemPrice.toFixed(2);
+        basketContainer.insertAdjacentHTML(
+                    "beforeend",
+                    `
+                        <tr>
+                            <td>${basketItem.name}</td>
+                            <td>${basketItem.rentDays}</td>
+                            <td>£${itemPrice}</td>
+                        </tr>
+                    `
+                  );
         totalPrice += basketItem.price * basketItem.rentDays;
+
     });
     totalPrice = totalPrice.toFixed(2);
 
