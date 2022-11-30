@@ -76,16 +76,19 @@
     const container = document.getElementById("payment-details");
     const paymentDetails = JSON.parse(localStorage.getItem("paymentDetails"));
 
+    const basketContainer = document.getElementById("basket");
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
 
     let totalPrice = 0.0;
+    let itenPrice = 0.0;
 
     // Get all the prices of the movie in the basket
     basket.forEach((basketItem) => {
-      totalPrice += basketItem.price * basketItem.rentDays;
+        itemPrice = basketItem.price * basketItem.rentDays;
+        itemPrice = itemPrice.toFixed(2);
+        totalPrice += basketItem.price * basketItem.rentDays;
     });
-
-    totalPrice *= 1.2;
+    totalPrice = totalPrice.toFixed(2);
 
     // Update the DOM with the payment details
     document.getElementById("payment-details-title").textContent = paymentDetails.title;
