@@ -5,11 +5,9 @@ function storeData() {
     formInputs.forEach((inputId) => {
       formData[inputId] = document.getElementById(inputId).value;
     })
-    formData.card = document.querySelector("input[name=card]:checked").value;
-    
     localStorage.setItem("paymentDetails", JSON.stringify(formData));
 
-    return false;
+    window.location.href='/invoice.html';
   }
 
   const container = document.getElementById("payment-details");

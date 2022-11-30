@@ -52,6 +52,7 @@
     <h1 style="text-align: center; color: #0f79af;">Checkout</h1>
     <div class="row">
       <div class="col-75">
+        <form action="invoice.html" method="post" onsubmit="storedata()" name="form" id="myForm">
         <div class="container">
             <div class="row">
               <div class="col-50">
@@ -108,8 +109,10 @@
             <label>
               <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
             </label>
-            <input type="button" value="Pay" class="btn" onclick="location.href='/invoice.html';">
+            <input type="button" value="Pay" class="btn" onclick="storedata()">
+            <!-- location.href='/invoice.html';-->
         </div>
+        </form>
       </div>
 
 
