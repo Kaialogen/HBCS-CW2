@@ -35,13 +35,13 @@ For 100%
  ## Shop:
  - [x] Images Missing and are not of same size.
  - [x] Prices are not displayed in the shop page - this means users have to add items to basket before knowing price.
- - [ ] Some movie Posters are in different languages (was joke, need to change) (**PLEASE CHANGE THE PICS BEFORE SUBMISSION**)
- - [ ] Days to rent has no input sanitation~aand has no cap on number of days to add.
+ - [x] Some movie Posters are in different languages (was joke, need to change) (**PLEASE CHANGE THE PICS BEFORE SUBMISSION**)
+ - [ ] Days to rent has no input sanitation and has no cap on number of days to add.
  - [ ] Add to basket button has no feedback at whether a item has been added or not.
  - [ ] Genres have a big presence but has no functionality.
 
  ## Movies:
- - [ ] Some descriptions in movies.js are not very descriptive - are lacking suitable discriptions.
+ - [ ] Some descriptions in movies.js are not very descriptive - are lacking suitable descriptions.
  - [ ] Style of movies page is still very basic
  - [x] No options to add movie to basket from this page
 
@@ -61,7 +61,7 @@ For 100%
  - [x] Input boxes are not lined up.
  - [x] Input boxes are not clearly labelled, with one being unlabelled.
  - [x] no suggestion data is present within the input boxes.
- - [x]  Buttons are too small.
+ - [x] Buttons are too small.
  - [x] Card number input box has the wrong input type.
  - [x] Lack of navbar.
  - [x] No indicator of what is in the basket currently.
