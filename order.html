@@ -52,28 +52,28 @@
     <h1 style="text-align: center; color: #0f79af;">Checkout</h1>
     <div class="row">
       <div class="col-75">
-        <form action="invoice.html" method="post" id="myForm" onsubmit="return validateData();" redirect="true" source="custom">
         <div class="container">
+          <form action="invoice.html" method="post" id="form" onsubmit="return storeData();" redirect="true" source="custom">
             <div class="row">
               <div class="col-50">
                 <h3>Billing Address</h3>
                 <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <input type="text" id="fname" name="fname" placeholder="John M. Doe" required="">
                 <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
+                <input type="text" id="email" name="email" placeholder="john@example.com" required="">
                 <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <input type="text" id="adr" name="adr" placeholder="542 W. 15th Street" required="">
                 <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input type="text" id="city" name="city" placeholder="Coventry">
+                <input type="text" id="city" name="city" placeholder="Coventry" required="">
     
                 <div class="row">
                   <div class="col-50">
                     <label for="county">County</label>
-                    <input type="text" id="county" name="county" placeholder="Coventry">
+                    <input type="text" id="county" name="county" placeholder="Coventry" required="">
                   </div>
                   <div class="col-50">
                     <label for="postcode">Postcode</label>
-                    <input type="text" id="postcode" name="postcode" placeholder="CV">
+                    <input type="text" id="postcode" name="postcode" placeholder="CV" required="">
                   </div>
                 </div>
               </div>
@@ -88,31 +88,31 @@
                   <i class="fa fa-cc-discover" style="color:orange;"></i>
                 </div>
                 <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <input type="text" id="cname" name="cname" placeholder="John More Doe" required="">
                 <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <input type="text" id="ccnum" name="ccnum" placeholder="1111-2222-3333-4444" required="">
                 <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <input type="text" id="expmonth" name="expmonth" placeholder="September" required="">
                 <div class="row">
                   <div class="col-50">
                     <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    <input type="text" id="expyear" name="expyear" placeholder="2018" required="">
                   </div>
                   <div class="col-50">
                     <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                    <input type="text" id="cvv" name="cvv" placeholder="352" required="">
                   </div>
                 </div>
               </div>
-              
             </div>
+            
             <label>
               <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
             </label>
             <input type="submit" value="submit" class="btn">
             <!-- location.href='/invoice.html';-->
+          </form>
         </div>
-        </form>
       </div>
 
 
@@ -140,8 +140,7 @@
     </div>
   </div>  
 
-
+  <script src="./js/order.js"></script>
   </body>
 
-  <script src="./js/order.js"></script>
 </html>
