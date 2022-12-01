@@ -14,7 +14,7 @@
         alert("Basket is empty!")
       }
       else {
-        window.location.href='/order.html';
+        window.location.href='http://localhost:8080/order.html';
       }
     }
     
