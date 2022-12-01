@@ -66,6 +66,7 @@ header,
 article,
 aside {
   padding: 1em;
+  text-align: center;
 }
 
 /* Add a black background color to the top navigation */
