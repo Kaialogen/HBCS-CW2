@@ -6,6 +6,18 @@
       localStorage.setItem('basket', '[]');
       window.location.reload();
     }
+
+    //check if basket is empty
+    function CheckBasket()
+    {
+      if (document.getElementById("total-price").textContent == 0.0){
+        alert("Basket is empty!")
+      }
+      else {
+        window.location.href='/order.html';
+      }
+    }
+    
     const basketContainer = document.getElementById("basket");
 
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
