@@ -92,15 +92,8 @@ For 100%
 - Added FAQ (Louis)
 
 # Future stuff
-- Store basket information in local storage - [https://stackoverflow.com/questions/64149597/add-items-to-basket-and-store-in-localstorage-with-javascript]
 - Create a invoice solution
-- Make logo
-- Implement search function
-- Fix search bar on order.html page
-- Decide how to display films on shop.html
-- Change parameters for the payment form
 - Visual indicator for when items are added to basket
 - Custom 404 page
 - Need report to be written.
 - Marketing - Name, slogan, image, colour scheme
-- Python server rewrite
