@@ -53,28 +53,17 @@
         <h1 style="text-align: center; color: white;">Welcome to Movie Rentals!</h1>
         <div style="background-color: lightgrey; width: 40%; margin: auto; padding: 1em; border-radius: 25px;">
           <form name="signUp" method="GET" action="/shop.html" onsubmit="return validateForm()" required>
-            <label>Username</label><br />
-            <input type="text" name="username" style="width: 100%" placeholder="Username" required/>
+            <label>Please Enter your Details:</label><br />
+            <input type="text" name="username" style="width: 50%; padding: 12px 12px; margin: 8px;" placeholder="Create a Username..." required/>
             <br />
+            <input type="text" name="email" style="width: 50%; padding: 12px 12px; margin: 8px;" placeholder="Enter your Email Address..." required/>
             <br />
-            <label>Date of Birth</label><br />
-            <input type="date" id="dob" name="dob" required/>
+            <input type="password" name="password" style="width: 50%; padding: 12px 12px; margin: 8px;" placeholder="Create a Password..." required/>
             <br />
-            <br />
-            <label>Email Address</label><br />
-            <input type="text" name="email" style="width: 100%" placeholder="Email Address" required/>
-            <br />
-            <br />
-            <label>Password</label><br />
-            <input type="password" name="password" style="width: 100%" placeholder="Password" required/>
-            <br />
-            <br />
-            <label>Confirm Password</label><br />
-            <input type="password" name="password2" style="width: 100%" placeholder="Confirm Password" required/>
-            <br />
+            <input type="password" name="password2" style="width: 50%; padding: 12px 12px; margin: 8px;" placeholder="Confirm your Password..." required/>
             <br />
             <div style="width: 100%; text-align: center">
-              <button type="submit" name="action" value="login" style="width: 40%">Register</button>
+              <button type="submit" name="action" value="login" style="width: 50%; padding: 12px 12px; margin: 8px;">Register</button>
               <br />
               <br />
               <a href="/login.html">Already have an account?</a>
