@@ -101,3 +101,6 @@ For 100%
 - Change parameters for the payment form
 - Visual indicator for when items are added to basket
 - Custom 404 page
+- Need report to be written.
+- Marketing - Name, slogan, image, colour scheme
+- Python server rewrite
