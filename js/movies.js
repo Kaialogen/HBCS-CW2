@@ -12,9 +12,10 @@ const movies = [
     director: "Destin Daniel Cretton",
     writer: "Dave Callaham, Destin Daniel Cretton, Andrew Lanham",
     actors: "Simu Liu, Awkwafina, Tony Chiu-Wai Leung",
-    description: "Shang-Chi, master of Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
+    description: "Shang-Chi, a martial artist, lives a quiet life after he leaves his father and the shadowy Ten Rings organisation behind. Years later, he is forced to confront his past when the Ten Rings attack him.",
     releaseDate: "03 Sep 2021",
     image: "images/Shang-Chi.jpg",
+    video: "https://www.youtube.com/embed/8YjFbMbfXaQ?controls=0&rel=0&autoplay=1&showinfo=0&playlist=8YjFbMbfXaQ",
     price: 2.49,
   },
   {
@@ -25,9 +26,10 @@ const movies = [
     director: "Cal Brunker",
     writer: "Bob Barlen, Cal Brunker, Billy Frolick",
     actors: "Iain Armitage, Will Brisbin, Ron Pardo",
-    description: "Ryder and his team of six intelligent puppies set out to stop Mayor Humdinger from wreaking havoc in the bustling metropolis.",
+    description: "When their biggest rival, Humdinger, starts wreaking havoc as the mayor of Adventure City, Ryder and everyone's favorite heroic pups kick into high gear to face the challenge. Armed with exciting new gadgets and gear, the PAW Patrol joins forces with a savvy dachshund to save the citizens of Adventure City.",
     releaseDate: "20 Aug 2021",
-  image: "images/paw_patrol.jpg",
+    image: "images/paw_patrol.jpg",
+    video: "https://www.youtube.com/embed/LRMTr2VZcr8?controls=0&rel=0&autoplay=1&showinfo=0&playlist=LRMTr2VZcr8",
     price: 2.99,
   },
   {
@@ -39,9 +41,10 @@ const movies = [
     writer: "Sam Raimi, Ivan Raimi, Alvin Sargent",
     actors: "Tobey Maguire, Kirsten Dunst, Topher Grace",
     description:
-      "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
+      "Peter Parker becomes one with a symbiotic alien that bolsters his Spider-Man avatar and affects his psyche. He also has to deal with Sandman and maintain a fragmented relationship with Mary Jane.",
     releaseDate: "04 May 2007",
     image: "images/spider-man3.jpg",
+    video: "https://www.youtube.com/embed/e5wUilOeOmg?controls=0&rel=0&autoplay=1&showinfo=0&playlist=e5wUilOeOmg",
     price: 0.50,
   },
   {
@@ -53,9 +56,10 @@ const movies = [
     writer: "Fede Alvarez, Rodo Sayagues",
     actors: "Stephen Lang, Jane Levy, Dylan Minnette",
     description:
-      "Hoping to walk away with a massive fortune, a trio of thieves break into the house of a blind man who isn't as helpless as he seems.",
+      "Three delinquents break into the house of Norman, a Gulf War veteran who is blind, to steal his money. However, much to their horror, they discover that Norman is not as defenceless as he seems.",
     releaseDate: "26 Aug 2016",
     image: "images/dont-breathe.jpg",
+    video: "https://www.youtube.com/embed/76yBTNDB6vU?controls=0&rel=0&autoplay=1&showinfo=0&playlist=76yBTNDB6vU",
     price: 1.29,
   },
   {
@@ -67,9 +71,10 @@ const movies = [
     writer: "Jonathan Nolan, Christopher Nolan, David S. Goyer",
     actors: "Christian Bale, Heath Ledger, Aaron Eckhart",
     description:
-      "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to its knees.",
     releaseDate: "18 Jul 2008",
     image: "images/Dark-Knight.jpg",
+    video: "https://www.youtube.com/embed/LDG9bisJEaI?controls=0&rel=0&autoplay=1&showinfo=0&playlist=LDG9bisJEaI",
     price: 2.99,
   },
   {
@@ -84,6 +89,7 @@ const movies = [
       "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
     releaseDate: "31 Mar 1999",
     image: "images/matrix.jpg",
+    video: "https://www.youtube.com/embed/vKQi3bBA1y8?controls=0&rel=0&autoplay=1&showinfo=0&playlist=vKQi3bBA1y8",
     price: 1.79,
   },
   {
@@ -98,6 +104,7 @@ const movies = [
       "A young woman unleashes terrifying demons when supernatural forces at the root of a decades-old rift between mother and daughter are ruthlessly revealed.",
     releaseDate: "20 Aug 2021",
     image: "images/demonic.jpg",
+    video: "https://www.youtube.com/embed/EYXLKC5xd7Q?controls=0&rel=0&autoplay=1&showinfo=0&playlist=EYXLKC5xd7Q",
     price: 0.49,
   },
   {
@@ -112,6 +119,7 @@ const movies = [
       "Charismatic rancher Phil Burbank inspires fear and awe in those around him. When his brother brings home a new wife and her son, Phil torments them until he finds himself exposed to the possibility of love.",
     releaseDate: "01 Dec 2021",
     image: "images/the-power-of-the-dog.jpg",
+    video: "https://www.youtube.com/embed/LRDPo0CHrko?controls=0&rel=0&autoplay=1&showinfo=0&playlist=LRDPo0CHrko",
     price: 1.79,
   },
   {
@@ -123,9 +131,10 @@ const movies = [
     writer: "Stan Lee, Steve Ditko, Alfred Gough",
     actors: "Tobey Maguire, Kirsten Dunst, Alfred Molina",
     description:
-      "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.",
+      "Peter Parker is dissatisfied with life when he loses his job, the love of his life, Mary Jane, and his powers. Amid all the chaos, he must fight Doctor Octavius who threatens to destroy New York City.",
     releaseDate: "30 Jun 2004",
     image: "images/spiderman-2.jpg",
+    video: "https://www.youtube.com/embed/enmFqm_N_ZE?controls=0&rel=0&autoplay=1&showinfo=0&playlist=enmFqm_N_ZE",
     price: 2.49,
   },
   {
@@ -139,6 +148,7 @@ const movies = [
     description: "H is a mysterious man who starts working for a cash moving truck company. He becomes known for using amazing precision and dexterity to neutralise robbers. However, H is actually out for revenge.",
     releaseDate: "07 May 2021",
     image: "images/wrath-of-man.jpg",
+    video: "https://www.youtube.com/embed/EFYEni2gsK0?controls=0&rel=0&autoplay=1&showinfo=0&playlist=EFYEni2gsK0",
     price: 0.49,
   },
   {
@@ -152,6 +162,7 @@ const movies = [
     description: "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
     releaseDate: "2001",
     image: "images/shrek.jpg",
+    video: "https://www.youtube.com/embed/CwXOrWvPBPk?controls=0&rel=0&autoplay=1&showinfo=0&playlist=CwXOrWvPBPk",
     price: 1.79,
   },
   {
@@ -165,6 +176,7 @@ const movies = [
     description: "test",
     releaseDate: "test",
     image: "test",
+    video: "https://www.youtube.com/embed/LRMTr2VZcr8",
     price: 0.49,
   },
 

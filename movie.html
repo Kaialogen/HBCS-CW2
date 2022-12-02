@@ -55,19 +55,30 @@
         <br />
         <br />
         <br />
+        <img class="image-1" id="movie-image" src="" />
+        <iframe width="560" height="350" id="movie-video" src="" frameborder="0" allow="autoplay"></iframe>
         <h1 class="text-movie text-white" id="movie-title"></h1>
-        <strong class="text-white" >Release Date: </strong>
-        <p class="text-white" id="movie-release-date"></p>
-        <strong class="text-white" >Genres: </strong>
-        <p  class="text-white" id="movie-genre"></p>
-        <strong class="text-white" >Director: </strong>
-        <p  class="text-white" id="movie-director"></p>
-        <strong class="text-white" >Actors: </strong>
-        <p  class="text-white" id="movie-actors"></p>
+          
+        <div class="row">
+          <p  class="text-white" id="movie-description"></p>
+          <br>
+          <br>
+          <div class="column left">
+            <strong class="text-white" >Release Date: </strong>
+            <p class="text-white" id="movie-release-date"></p>
+            <strong class="text-white" >Genres: </strong>
+            <p  class="text-white" id="movie-genre"></p>
+          </div>
+          <div class="column right">
+            <strong class="text-white" >Director: </strong>
+            <p  class="text-white" id="movie-director"></p>
+            <strong class="text-white" >Actors: </strong>
+            <p  class="text-white" id="movie-actors"></p>
+          </div>
+      </div>
+      <br>
         <strong class="text-white" >Price per day: </strong>
         <p  class="text-white" id="movie-price"></p>
-        <img class="image-1" id="movie-image" src="" />
-        <p  class="text-white" id="movie-description"></p>
         <input type="number" id="days-to-rent-x" name="quantity" min="1" max="30" size="3" value="3">
         <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(movieId)">Add to Basket</button>
       </article>
@@ -94,5 +105,6 @@
     document.getElementById("movie-description").textContent = movie.description;
     document.getElementById("movie-release-date").textContent = movie.releaseDate;
     document.getElementById("movie-price").textContent = movie.price;
+    document.getElementById("movie-video").src = movie.video;
   </script>
 </html>
