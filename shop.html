@@ -41,6 +41,7 @@
               <a onclick="drama()">Drama</a>
               <a onclick="horror()">Horror</a>
               <a onclick="action()">Action</a>
+              <a onclick="fantasy()">Fantasy</a>
             </div>
           </div>
             <a href="/basket.html" class="basket"><i class="fa fa-fw fa-shopping-basket"></i></a>
@@ -151,12 +152,10 @@
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
     </div> 
 
 <div class="grid-container" id="grid">
-  <div id="shang-chi"> 
-    <div class="container">
+    <div id="shang-chi" class="container">
       <img src="/images/Shang-Chi.jpg" class="image" style="width:100%">
 
       <div class="middle" >
@@ -167,11 +166,9 @@
           <div class="text">Shang-Chi, the master of unarmed weaponry based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization. </div>
           <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=1';">More Info</button>
       </div>
-    </div>
-  </div> 
+    </div> 
 
-  <div id="paw-patrol">
-    <div class="container">
+    <div id="paw-patrol" class="container">
         <img src="/images/paw_patrol.jpg" class="image" style="width:100%">
       
         <div class="middle">
@@ -183,10 +180,9 @@
             <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=2';">More Info</button>
         </div>
     </div>
-  </div>
 
-<div id="spider-man-3">
-  <div class="container">
+
+  <div id="spider-man-3" class="container">
     <img src="/images/spider-man3.jpg" class="image" style="width:100%">
 
     <div class="middle">
@@ -198,10 +194,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=3';">More Info</button>
     </div>
   </div>
-</div>
 
-<div id="dont-breathe">
-  <div class="container">
+  <div id="dont-breathe" class="container">
     <img src="/images/dont-breathe.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -213,10 +207,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=4';">More Info</button>
     </div>
   </div>
-</div>
 
-<div id="dark-knight">
-  <div class="container">
+  <div id="dark-knight" class="container">
     <img src="/images/Dark-Knight.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -228,10 +220,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=5';">More Info</button>
     </div>
   </div>
-</div>
 
-<div id="matrix">
-  <div class="container">
+  <div id="matrix" class="container">
     <img src="/images/matrix.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -243,11 +233,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=6';">More Info</button>
     </div>
   </div>
-</div>
 
-
-<div id="demonic">
-  <div class="container">
+  <div id="demonic" class="container">
     <img src="/images/demonic.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -259,10 +246,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=7';">More Info</button>
     </div>
   </div>
-</div>
 
-<div id="power-dog">
-  <div class="container">
+  <div id="power-dog" class="container">
     <img src="/images/the-power-of-the-dog.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -274,10 +259,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=8';">More Info</button>
     </div>
   </div>
-</div>
 
-<div id="spider-man-2">
-  <div class="container">
+  <div id="spider-man-2" class="container">
     <img src="/images/spiderman-2.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -289,10 +272,8 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=9';">More Info</button>
     </div>
   </div>
-</div>
 
-<div id="wrath-man">
-  <div class="container">
+  <div id="wrath-man" class="container">
     <img src="/images/wrath-of-man.jpg" class="image" style="width:100%">
   
     <div class="middle">
@@ -303,10 +284,8 @@
         <div class="text">The plot follows H, a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week.</div>
         <button class="button-2" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=10';">More Info</button>
     </div>
-  </div>
 
-<div id="shrek">
-  <div class="container">
+  <div id="shrek" class="container">
     <img src="/images/shrek.jpg" class="image" style="width:100%">
 
     <div class="middle">
@@ -318,7 +297,6 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=11';">More Info</button>
     </div>
   </div>
-</div>
 
 
     <script src="./js/movies.js"></script>
@@ -332,31 +310,44 @@
 
 <script>
   function adventure(){
-    document.getElementById('paw-patrol').style.display = "none";
-    document.getElementById('shang-chi').style.display = "none";
+    
   }
 
   function animation(){
-
+    document.getElementById('shang-chi').style.display = "none";
+    document.getElementById('spider-man-3').style.display = "none";
   }
 
   function scienceFiction(){
-
+    document.getElementById('shang-chi').style.display = "none";
+    document.getElementById('paw-patrol').style.display = "none";
   }
 
   function comedy(){
-
+    document.getElementById('shang-chi').style.display = "none";
+    document.getElementById('spider-man-3').style.display = "none";
   }
 
   function drama(){
-
+    document.getElementById('shang-chi').style.display = "none";
+    document.getElementById('paw-patrol').style.display = "none";
+    document.getElementById('spider-man-3').style.display = "none";
   }
 
   function horror(){
-
+    document.getElementById('shang-chi').style.display = "none";
+    document.getElementById('paw-patrol').style.display = "none";
+    document.getElementById('spider-man-3').style.display = "none";
  }
 
  function action(){
+  document.getElementById('paw-patrol').style.display = "none";
+
+ }
+
+ function fantasy(){
+  document.getElementById('paw-patrol').style.display = "none";
+  document.getElementById('spider-man-3').style.display = "none";
 
  }
 </script>
