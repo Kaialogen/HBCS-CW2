@@ -37,7 +37,7 @@
         `
             <tr>
                 <td><a id="${basketItem.name}.rem" onclick="removemovie(this.id)" class="red-x">x</a> ${basketItem.name}</td>
-                <td>${basketItem.rentDays}</td>
+                <td><a id="${basketItem.name}.neg" onclick="subdays(this.id)" class="neg">-</a> ${basketItem.rentDays} <a id="${basketItem.name}.add" onclick="adddays(this.id)" class="add">+</a> </td>
                 <td>£${itemPrice}</td>
             </tr>
         `
@@ -47,3 +47,50 @@
     totalPrice = totalPrice.toFixed(2);
     //changed the value of 1.2 to 1 (no clue what the 1.2 did? maybe vat?)
     document.getElementById("total-price").textContent = totalPrice;
+
+
+
+function removemovie(movieinput){
+    const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
+    const save = JSON.parse(localStorage.getItem("save") ?? "[]");
+    const moviename = movieinput.split(".")[0];
+    basket.splice(save.indexOf(moviename), 1);
+    save.splice(save.indexOf(moviename), 1);
+    localStorage.setItem("basket", JSON.stringify(basket));
+    localStorage.setItem("save", JSON.stringify(save));
+    window.location.reload();
+    }
+
+    function adddays(movieinput){
+      const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
+      const save = JSON.parse(localStorage.getItem("save") ?? "[]");
+      const moviename = movieinput.split(".")[0];
+      if (basket[save.indexOf(moviename)].rentDays < 30){
+          basket[save.indexOf(moviename)].rentDays += 1;
+          localStorage.setItem("basket", JSON.stringify(basket));
+          window.location.reload();
+      }
+      else{
+          alert("Sorry you cannot rent a movie longer than 30 days.");
+      }
+      
+  }
+
+function subdays(movieinput){
+    const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
+    const save = JSON.parse(localStorage.getItem("save") ?? "[]");
+    const moviename = movieinput.split(".")[0];
+    if (basket[save.indexOf(moviename)].rentDays > 1){
+        basket[save.indexOf(moviename)].rentDays -= 1;
+        localStorage.setItem("basket", JSON.stringify(basket));
+        window.location.reload();
+    }
+    else{
+        basket.splice(save.indexOf(moviename), 1);
+        save.splice(save.indexOf(moviename), 1);
+        localStorage.setItem("basket", JSON.stringify(basket));
+        localStorage.setItem("save", JSON.stringify(save));
+        window.location.reload();
+    }
+    
+}
