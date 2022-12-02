@@ -59,3 +59,11 @@
   color: red;
   cursor: pointer;
  }
+
+ .neg {
+  cursor: pointer;
+ }
+
+ .add {
+  cursor: pointer;
+ }
