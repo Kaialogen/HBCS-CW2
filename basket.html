@@ -86,4 +86,19 @@
   <script src="./js/basket.js"></script>
   <script src="./js/search.js"></script>
 
+  <script>
+
+    function removemovie(movieinput){
+      const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
+      const save = JSON.parse(localStorage.getItem("save") ?? "[]");
+      const moviename = movieinput.split(".")[0];
+      basket.splice(save.indexOf(moviename), 1);
+      save.splice(save.indexOf(moviename), 1);
+      localStorage.setItem("basket", JSON.stringify(basket));
+      localStorage.setItem("save", JSON.stringify(save));
+      window.location.reload();
+              }
+
+
+  </script>
 </html>
