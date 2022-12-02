@@ -20,17 +20,16 @@ function addToBasket(movieId) {
     }
     var additional = 0;
     var ifalert = 0;
-    var rentDays = document.getElementById("days-to-rent-" + movieId).value;
-    if (isNaN(parseFloat(rentDays))){
+    var days_rent = document.getElementById("days-to-rent-" + movieId).value;
+    if (isNaN(parseFloat(days_rent))){
         alert("Please ensure that the days inputted is a number.");
         return;
     }
-    if (rentDays == 0){
+    if (days_rent == 0){
         alert("Sorry you cannot rent a movie for 0 days.");
         return;
     }
     additional += parseInt(rentDays);
-    //movie.rentDays += parseInt(document.getElementById("days-to-rent-" + movieId).value);
     if (additional > 30) {
         movie.rentDays = 30;
         alert("Sorry you cannot rent a movie longer than 30 days.  Rent time has been changed to 30 days.");
