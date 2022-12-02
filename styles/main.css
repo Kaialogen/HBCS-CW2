@@ -138,8 +138,11 @@ aside {
 }
 
 .logo{
-  display: block;
-  margin: auto;
+  display: inline-block;
+  margin: 0 auto;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 500px) {
@@ -169,8 +172,8 @@ aside {
   float: right;
   overflow: hidden;
   position: relative;
-  right: 36%;
-  top: 7px;
+  right: 30%;
+  top: 12px;
 }
 
 .homebtn .homebtn-btn{
