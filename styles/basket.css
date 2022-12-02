@@ -55,6 +55,7 @@
     padding: 50px;
   }
 
- .red-text {
+ .red-x {
   color: red;
+  cursor: pointer;
  }
