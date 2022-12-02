@@ -176,7 +176,7 @@ const movies = [
     description: "Barry B. Benson, a bee just graduated from college, is disillusioned at his lone career choice: making honey. On a special trip outside the hive, Barry's life is saved by Vanessa, a florist in New York City. As their relationship blossoms, he discovers humans actually eat honey, and subsequently decides to sue them.",
     releaseDate: "2007",
     image: "images/bee-movie.jpg",
-    video: "https://www.youtube.com/embed/VONRQMx78YI",
+    video: "https://www.youtube.com/embed/VONRQMx78YI?controls=0&rel=0&autoplay=1&showinfo=0",
     price: 0.49,
   },
 
