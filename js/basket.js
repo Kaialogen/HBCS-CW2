@@ -36,7 +36,7 @@
         "beforeend",
         `
             <tr>
-                <td>${basketItem.name}</td>
+                <td><a id="${basketItem.name}.rem" onclick="removemovie(this.id)" class="red-text">x</a> ${basketItem.name}</td>
                 <td>${basketItem.rentDays}</td>
                 <td>£${itemPrice}</td>
             </tr>
