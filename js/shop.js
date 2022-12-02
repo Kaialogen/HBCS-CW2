@@ -30,7 +30,6 @@ function addToBasket(movieId) {
         return;
     }
     additional += parseInt(rentDays);
-    //movie.rentDays += parseInt(document.getElementById("days-to-rent-" + movieId).value);
     if (additional > 30) {
         movie.rentDays = 30;
         alert("Sorry you cannot rent a movie longer than 30 days.  Rent time has been changed to 30 days.");
