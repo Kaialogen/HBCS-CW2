@@ -39,10 +39,20 @@ function addToBasket(movieId) {
         movie.rentDays = additional;
     }
 
-
+    /* Splice Algorithm
+    if (exists == 1){
+        basket[save.indexOf(movie.name)].rentDays += additional;
+        if (basket[save.indexOf(movie.name)].rentDays < 1){
+            alert("Item has been removed from the basket.");
+            basket.splice(save.indexOf(movie.name), 1);
+            save.splice(save.indexOf(movie.name), 1);
+        }
+    } 
+    */   
 
     basket.push(movie);
     localStorage.setItem("save", JSON.stringify(save));
     localStorage.setItem("basket", JSON.stringify(basket));
+
     alert(movie.name + " has been added to basket");
 }
