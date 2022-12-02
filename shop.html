@@ -34,13 +34,13 @@
               </div>
             </button>
             <div class="dropdown-content">
-              <a href="#">Adventure</a>
-              <a href="#">Animation</a>
-              <a href="#">Science Fiction</a>
-              <a href="#">Comedy</a>
-              <a href="#">Drama</a>
-              <a href="#">Horror</a>
-              <a href="#">Action</a>
+              <button onclick="adventure()">Adventure</button>
+              <button onclick="animation()">Animation</button>
+              <button onclick="scienceFiction()">Science Fiction</button>
+              <button onclick="comedy()">Comedy</button>
+              <button onclick="drama()">Drama</button>
+              <button onclick="horror()">Horror</button>
+              <button onclick="action()">Action</button>
             </div>
           </div>
             <a href="/basket.html" class="basket"><i class="fa fa-fw fa-shopping-basket"></i></a>
@@ -154,33 +154,38 @@
     
     </div> 
 
-<div class="grid-container">    
-  <div class="container">
-    <img src="/images/Shang-Chi.jpg" class="image" style="width:100%">
+<div class="grid-container" id="grid">
+  <div id="shang-chi"> 
+    <div class="container">
+      <img src="/images/Shang-Chi.jpg" class="image" style="width:100%">
 
-    <div class="middle">
-        <div class="text-title">Shang-Chi and the Legend of the Ten Rings</div>
-        <div class="text">Price: £2.49 per day</div>
-        <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
-        <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(1)">Add to Basket</button>
-        <div class="text">Shang-Chi, the master of unarmed weaponry based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization. </div>
-        <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=1';">More Info</button>
+      <div class="middle" >
+          <div class="text-title">Shang-Chi and the Legend of the Ten Rings</div>
+          <div class="text">Price: £2.49 per day</div>
+          <input type="number" id="days-to-rent-1" name="quantity" min="1" max="30" size="3" value="3">
+          <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(1)">Add to Basket</button>
+          <div class="text">Shang-Chi, the master of unarmed weaponry based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization. </div>
+          <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=1';">More Info</button>
+      </div>
+    </div>
+  </div> 
+
+  <div id="paw-patrol">
+    <div class="container">
+        <img src="/images/paw_patrol.jpg" class="image" style="width:100%">
+      
+        <div class="middle">
+            <div class="text-title">PAW Patrol: The Movie</div>
+            <div class="text">Price: £2.99 per day</div>
+            <input type="number" id="days-to-rent-2" name="quantity" min="1" max="30" size="3" value="3">
+            <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(2)">Add to Basket</button>
+            <div class="text">Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos. </div>
+            <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=2';">More Info</button>
+        </div>
     </div>
   </div>
 
- <div class="container">
-    <img src="/images/paw_patrol.jpg" class="image" style="width:100%">
-  
-    <div class="middle">
-        <div class="text-title">PAW Patrol: The Movie</div>
-        <div class="text">Price: £2.99 per day</div>
-        <input type="number" id="days-to-rent-2" name="quantity" min="1" max="30" size="3" value="3">
-        <button class="button-2" style="width: 100px; height: 50px" onclick="addToBasket(2)">Add to Basket</button>
-        <div class="text">Ryder and the pups are called to Adventure City to stop Mayor Humdinger from turning the bustling metropolis into a state of chaos. </div>
-        <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=2';">More Info</button>
-    </div>
-  </div>
-
+<div id="spider-man-3">
   <div class="container">
     <img src="/images/spider-man3.jpg" class="image" style="width:100%">
 
@@ -193,7 +198,9 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=3';">More Info</button>
     </div>
   </div>
+</div>
 
+<div id="dont-breathe">
   <div class="container">
     <img src="/images/dont-breathe.jpg" class="image" style="width:100%">
   
@@ -206,7 +213,9 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=4';">More Info</button>
     </div>
   </div>
+</div>
 
+<div id="dark-knight">
   <div class="container">
     <img src="/images/Dark-Knight.jpg" class="image" style="width:100%">
   
@@ -219,7 +228,9 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=5';">More Info</button>
     </div>
   </div>
+</div>
 
+<div id="matrix">
   <div class="container">
     <img src="/images/matrix.jpg" class="image" style="width:100%">
   
@@ -232,7 +243,10 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=6';">More Info</button>
     </div>
   </div>
+</div>
 
+
+<div id="demonic">
   <div class="container">
     <img src="/images/demonic.jpg" class="image" style="width:100%">
   
@@ -245,6 +259,7 @@
         <button class="button-1" style="width: 100px; height: 50px" onclick="location.href='/movie.html?id=7';">More Info</button>
     </div>
   </div>
+</div>
 
   <div class="container">
     <img src="/images/the-power-of-the-dog.jpg" class="image" style="width:100%">
@@ -294,3 +309,33 @@
 
 </html>
 
+<script>
+  function adventure(){
+    document.getElementById('paw-patrol').style.display = "none";
+    document.getElementById('shang-chi').style.display = "none";
+  }
+
+  function animation(){
+
+  }
+
+  function scienceFiction(){
+
+  }
+
+  function comedy(){
+
+  }
+
+  function drama(){
+
+  }
+
+  function horror(){
+
+ }
+
+ function action(){
+
+ }
+</script>
