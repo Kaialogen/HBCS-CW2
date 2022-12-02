@@ -158,13 +158,15 @@ aside {
   color: white;
 }
 
+
+/* this code is the same as .dropdown's css directly below the .homebtn code, just needed to remove the dropdown menu from all pages except shop */
 .homebtn {
   float: left;
   overflow: hidden;
 }
 
 .homebtn .homebtn-btn{
-    font-size: 16px;
+  font-size: 16px;
   border: none;
   outline: none;
   background-color: #0f79af;
@@ -216,7 +218,7 @@ aside {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #a9a9a941;
 }
 
 /* Show the dropdown menu on hover */
