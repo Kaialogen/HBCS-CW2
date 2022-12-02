@@ -1,6 +1,6 @@
 function storeData() {
     // Collect all form data for use in the invoice
-    const formInputs = ["fname", "email", "adr", "city", "county", "postcode", "cname", "ccnum", "expmonth", "expyear", "cvv"];
+    const formInputs = ["fname", "lname", "email", "adr", "city", "county", "postcode", "cname", "ccnum", "expmonth", "expyear", "cvv"];
     const formData = {};
     formInputs.forEach((inputId) => {
       formData[inputId] = document.getElementById(inputId).value;
