@@ -93,6 +93,78 @@ margin: 19px auto 0;
   top: 70px;
 }
 
+
+/* ALL MOVIES HAVE THEIR OWN CSS STYLES */
+/* .shang-chi {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.paw-patrol {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.spider-man-3 {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.dont-breathe {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.dark-knight {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.demonic {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.power-dog {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.spider-man-2 {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.wrath-man {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+}
+
+.skrek {
+  position: relative;
+  width: 100%;
+  top: 70px;
+  display: inline;
+} */
+
 .right-container {
   position: relative;
   width: 50%;
@@ -101,7 +173,7 @@ margin: 19px auto 0;
 .image {
   opacity: 1;
   display: block;
-  transition: 3s ease;
+  transition: .3s ease;
   backface-visibility: hidden;
   width: 450px;
   height: 450px; 
@@ -272,4 +344,8 @@ margin: 19px auto 0;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 600px;
+}
+
+.fix {
+  top: -1000%;
 }
