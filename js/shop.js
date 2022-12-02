@@ -44,4 +44,5 @@ function addToBasket(movieId) {
     basket.push(movie);
     localStorage.setItem("save", JSON.stringify(save));
     localStorage.setItem("basket", JSON.stringify(basket));
+    alert(movie.name + " has been added to basket");
 }
