@@ -35,5 +35,5 @@ slides[i].style.display = "none";
 slideIndex++;
 if (slideIndex > slides.length) {slideIndex = 1}
 slides[slideIndex-1].style.display = "block";
-setTimeout(showSlidesAutomatic, 5000); // Change image every 10 seconds
+setTimeout(showSlidesAutomatic, 10000); // Change image every 10 seconds
 }
