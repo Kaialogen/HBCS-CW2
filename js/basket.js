@@ -18,6 +18,8 @@
       }
     }
     
+    const basketContainer = document.getElementById("basket");
+
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
     const save = JSON.parse(localStorage.getItem("save") ?? "[]");
 
@@ -47,7 +49,6 @@
     document.getElementById("total-price").textContent = totalPrice;
 
 
-const basketContainer = document.getElementById("basket");
 
 function removemovie(movieinput){
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
