@@ -168,11 +168,13 @@ aside {
 }
 
 
-/* this code is the same as .dropdown's css directly below the .homebtn code, just needed to remove the dropdown menu from all pages except shop */
+/* this code is the same as .dropdown's css directly below the .homebtn code*/
 .homebtn {
   float: right;
   overflow: hidden;
-  
+  position: relative;
+  right: 36%;
+  top: 7px;
 }
 
 .homebtn .homebtn-btn{
@@ -182,25 +184,6 @@ aside {
   color: white;
   background-color: transparent;
   /* padding: 23px 16px; */
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-  cursor: pointer;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  background-color: #0f79af;
-  color: white;
-  padding: 14px 16px;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
   cursor: pointer;
@@ -308,4 +291,23 @@ footer {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #0f79af;
+  color: white;
+  padding: 14px 16px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  cursor: pointer;
 }
