@@ -14,7 +14,7 @@ showSlidesManual(slideIndex += n);
 //Function for automatic slideshow index change
 function plusSlides(n) {
     showSlidesAutomatic(slideIndex += n);
-    }
+}
 
 
 function showSlidesManual(n) {
