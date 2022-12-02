@@ -39,7 +39,7 @@ function addToBasket(movieId) {
         movie.rentDays = additional;
     }
 
-    /* Splice Algorithm
+    /* Splice Algorithm - breaks everything
     if (exists == 1){
         basket[save.indexOf(movie.name)].rentDays += additional;
         if (basket[save.indexOf(movie.name)].rentDays < 1){
