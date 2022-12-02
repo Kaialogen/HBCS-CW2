@@ -92,8 +92,11 @@ For 100%
 - Added FAQ (Louis)
 
 # Future stuff
-- Create a invoice solution
+- Create a invoice solution (needs css)
 - Visual indicator for when items are added to basket
+- Adjust number of items in basket
+- Can remove items in basket without needing to clear entire basket
 - Custom 404 page
 - Need report to be written.
 - Marketing - Name, slogan, image, colour scheme
+- Footer
