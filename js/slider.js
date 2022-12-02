@@ -3,7 +3,7 @@ let slideIndex = 0;
 //Function calls for automatic and manual slideshows -- Comment out the one you do not want to use;
 
 showSlidesManual(slideIndex);
-showSlidesAutomatic();
+showSlidesAutomatic(slideIndex);
 
 
 //Function for manual slideshow index change
