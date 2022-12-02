@@ -101,7 +101,7 @@ margin: 19px auto 0;
 .image {
   opacity: 1;
   display: block;
-  transition: .5s ease;
+  transition: 3s ease;
   backface-visibility: hidden;
   width: 450px;
   height: 450px; 
