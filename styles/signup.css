@@ -2,4 +2,38 @@
     position: absolute;
     width: 100%;
     padding: 50px;
+
+}
+
+input[type=text] {
+    width: 50%; 
+    padding: 12px 12px; 
+    margin: 8px; 
+    border-radius: 10px; 
+    border-color: grey;
+}
+
+input[type=text] {
+    width: 50%; 
+    padding: 12px 12px; 
+    margin: 8px; 
+    border-radius: 10px; 
+    border-color: grey;
+}
+
+button {
+    width: 50%; 
+    padding: 12px 12px; 
+    margin: 8px; 
+    border-radius: 10px; 
+    border-color: #0f79af;
+    background-color: #0f79af;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    border-color: #0d4561;
+    background-color: #0d4561;
+    color: white;
 }
