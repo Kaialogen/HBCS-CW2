@@ -48,6 +48,9 @@ function submitted() {
       else if (Input.includes("mat")){
         window.open("http://localhost:8080//Movie.html?id=6")
       }
+      else if (Input.includes("shrek")){
+        window.open("http://localhost:8080/movie.html?id=11")
+      }
       else {
         alert("Sadly we couldn't identify that movie in our catalogue")
   }
