@@ -96,4 +96,3 @@ For 100%
 - Visual indicator for when items are added to basket (alert box)
 - Custom 404 page
 - Need report to be written.
-- Marketing - Name, slogan, image, colour scheme
