@@ -172,11 +172,14 @@ margin: 19px auto 0;
 }
 
 .grid-container {
+  padding: 8px 16px;
+  max-width: 1800px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 5vw);
   row-gap: 400px;
-  column-gap: 15px;
+  column-gap: 20px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
