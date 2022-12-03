@@ -1,24 +1,35 @@
 function storeData() {
-    // Collect all form data for use in the invoice
+    // Create an array of the form input field ids
     const formInputs = ["fname", "lname", "email", "adr", "city", "county", "postcode", "cname", "ccnum", "expmonth", "expyear", "cvv"];
+    // Initialize an object to store the form data
     const formData = {};
+    // Loop through the form input ids
     formInputs.forEach((inputId) => {
+    // Add the value of each form input to the form data object
       formData[inputId] = document.getElementById(inputId).value;
     })
+    // Store the form data in local storage
     localStorage.setItem("paymentDetails", JSON.stringify(formData));
+    // Return true to indicate that the data was successfully stored
     return true;
 }
 
-
+// Retrieve the HTML element for the shopping basket
 const basketContainer = document.getElementById("basket");
+// Retrieve the shopping basket from local storage
 const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
 
+// Initialize the total price and item price to 0
 let totalPrice = 0.0;
 let itemPrice = 0.0;
 
+// Loop through each item in the shopping basket
 basket.forEach((basketItem) => {
+    // Calculate the item price by multiplying the price and number of rental days
     itemPrice = basketItem.price * basketItem.rentDays;
+    // Format the item price to two decimal places
     itemPrice = itemPrice.toFixed(2);
+    // Insert the item details into the shopping basket in the HTML DOM
 basketContainer.insertAdjacentHTML(
     "beforeend",
     `
@@ -29,71 +40,11 @@ basketContainer.insertAdjacentHTML(
         </tr>
     `
 );
+// Add the item price to the total price
 totalPrice += basketItem.price * basketItem.rentDays;
 });
 
+// Format the total price to two decimal places
 totalPrice = totalPrice.toFixed(2);
+// Update the total price in the HTML DOM
 document.getElementById("total-price").textContent = totalPrice;
-
-function validateData(){
-    var postcode_check = document.getElementById("postcode").value;
-    var postcode_regex = /^(GIR[ ]?0AA|((AB|AL|B|BA|BB|BD|BH|BL|BN|BR|BS|BT|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(\d[\dA-Z]?[ ]?\d[ABD-HJLN-UW-Z]{2}))|BFPO[ ]?\d{1,4})$/;
-    var postcodes = String(postcode_check).match(postcode_regex);
-    var first_check = document.getElementById("fname").value;
-    var last_check = document.getElementById("lname").value;
-    var payment_name_check = document.getElementById("cname").value;
-    var check_card_number = document.getElementById("ccnum").value;
-    var check_card_number1 = document.getElementById("cardnumber1").value;
-    var check_card_number2 = document.getElementById("cardnumber2").value;
-    var check_card_number3 = document.getElementById("cardnumber3").value;
-    var check_expiration_month = document.getElementById("expmonth").value;
-    var check_expiration_year = document.getElementById("expyear").value;
-    var ccv_check = document.getElementById("ccv").value;
-    var country_check = document.getElementById("county").value;
-    let deliveryname = title_check + " " + first_check + " " + last_check;
-    let nameRegex = /^[a-z ,.'-]+$/i
-    let cardNumberRegex = /[^<>%\$a-zA-Z]{4,4}/  // just numbers and only 4 characters regex
-    let date = new Date();
-    var mm = date.getMonth();
-    var yyyy = date.getFullYear();
-    //currentYear = mm + " " + yyyy
-    cardyear = check_expiration_month + " " + check_expiration_year
-    let ccvRegex = /^[0-9]{3}$/
-    
-    if (nameRegex.test(deliveryname) == false){
-        alert("Please enter a valid order name");
-        event.preventDefault();
-        return false;
-    }
-    else if (nameRegex.test(payment_name_check) == false){
-        alert("Please enter a valid cardholder name");
-        event.preventDefault();
-        return false;
-    }
-    else if (cardNumberRegex.test(check_card_number) == false || cardNumberRegex.test(check_card_number1) == false || cardNumberRegex.test(check_card_number2) == false || cardNumberRegex.test(check_card_number3) == false){
-        alert("Please enter a valid card number");
-        event.preventDefault();
-        return false;
-    }
-    else if ((yyyy > check_expiration_year) || (yyyy == check_expiration_year & mm < check_expiration_month)){
-        alert("Please enter a valid expiration date");
-        event.preventDefault();
-        return false;
-    }
-    else if (ccvRegex.test(ccv_check) == false){
-        alert("Please enter a valid ccv");
-        event.preventDefault();
-        return false;
-    }
-    else if (postcodes == null){
-        if (country_check == "United Kingdom") {
-            alert("Please enter a valid postcode");
-            event.preventDefault();
-            return false;
-        }
-    }
-    else{
-        storeData();
-        return true;
-    }
-}
