@@ -28,7 +28,7 @@ function submitted() {
   // Check if the input matches any keywords
   const id = movieMap[input];
   if (id) {
-      window.open(`${baseURL}/Movie.html?id=${id}`);
+      window.open(`${baseURL}/movie.html?id=${id}`);
   } else {
       alert("We couldn't identify that movie in our catalogue");
   }
