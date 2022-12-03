@@ -139,7 +139,7 @@ aside {
 
 .logo{
   display: inline-block;
-  margin: 0 auto;
+  margin: auto;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
@@ -169,10 +169,10 @@ aside {
 
 /* this code is the same as .dropdown's css directly below the .homebtn code*/
 .homebtn {
-  float: right;
+  float: left;
   overflow: hidden;
   position: relative;
-  right: 30%;
+  left: 10px;
   top: 12px;
 }
 
@@ -235,7 +235,7 @@ aside {
   display: flex;
   position: relative;
   top: 10px;
-  left: 10px;
+  left: 20px;
   border-width: 2px;
   border-color: #00a8e1;
   border-radius: 10px !important;
