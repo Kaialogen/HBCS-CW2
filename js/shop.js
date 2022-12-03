@@ -7,6 +7,7 @@ function addToBasket(movieId) {
     // Get the basket from local storage, or just an empty array if it doesn't exist
     const basket = JSON.parse(localStorage.getItem("basket") ?? "[]");
     const save = JSON.parse(localStorage.getItem("save") ?? "[]");
+
     if (save.indexOf(movie.name) == -1){
         save.push(movie.name);
     }
@@ -20,18 +21,20 @@ function addToBasket(movieId) {
     }
     var additional = 0;
     var ifalert = 0;
-    var rentDays = document.getElementById("days-to-rent-" + movieId).value;
-    if (isNaN(parseFloat(rentDays))){
+    var days_rent = document.getElementById("days-to-rent-" + movieId).value;
+    if (isNaN(parseFloat(days_rent))){
         alert("Please ensure that the days inputted is a number.");
         return;
     }
-    if (rentDays == 0){
-        alert("Sorry you cannot rent a movie for 0 days.");
+    if (days_rent == 0){
+        alert("Sorry you cannot rent a movie 0 days.");
         return;
     }
-    additional += parseInt(rentDays);
+    additional += parseInt(days_rent);
+
+
     if (additional > 30) {
-        movie.rentDays = 30;
+        movie.rentDays = additional;
         alert("Sorry you cannot rent a movie longer than 30 days.  Rent time has been changed to 30 days.");
         ifalert = 1;
         }
@@ -39,7 +42,8 @@ function addToBasket(movieId) {
         movie.rentDays = additional;
     }
 
-    /* Splice Algorithm - breaks everything
+    /* Splice Algorithm - breaks everything */
+    /*
     if (exists == 1){
         basket[save.indexOf(movie.name)].rentDays += additional;
         if (basket[save.indexOf(movie.name)].rentDays < 1){
@@ -47,12 +51,18 @@ function addToBasket(movieId) {
             basket.splice(save.indexOf(movie.name), 1);
             save.splice(save.indexOf(movie.name), 1);
         }
-    } 
-    */   
+    }
+    else
+    {
+        basket.push(movie);
+        alert(movie.name + " has been added to basket");
+    }
+    */
+
 
     basket.push(movie);
+    alert(movie.name + " has been added to basket");
+    
     localStorage.setItem("save", JSON.stringify(save));
     localStorage.setItem("basket", JSON.stringify(basket));
-
-    alert(movie.name + " has been added to basket");
 }
