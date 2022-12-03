@@ -52,23 +52,23 @@
     
     <div class="invoice">
       <article>
-        <h1 style="text-align: center; color: #0f79af;">Thank You For Your Order!</h1>
+        <h1 class="invoice-title">Thank You For Your Order!</h1>
         <div class="container">
-          <h2>Receipt</h2>
-        <div id="payment-details">
-          <p>
-            <span id="payment-details-title"></span> <span id="fname"></span> <span id="lname"></span>
-            <span id="email"></span>
+          <h2 class="invoice-header">Receipt</h2>
+        <div id="payment-details" class="payment-details">
+          <p class="info">
+            <span id="payment-details-title" class="payment-detail"></span> <span id="fname" class="payment-detail"></span> <span id="lname" class="payment-detail"></span>
+            <span id="email" class="payment-detail"></span>
           </p>
-          <p>
-            <span id="adr"></span> <span id="city"></span><span id="county"></span>
-            <span id="postcode"></span>
+          <p class="info">
+            <span id="adr" class="payment-detail"></span> <span id="city" class="payment-detail"></span><span id="county" class="payment-detail"></span>
+            <span id="postcode" class="payment-detail"></span>
           </p>
-          <p>
-            <span id="payment-details-card"></span> <span id="payment-details-cardNumber"></span>
+          <p class="payment-info">
+            <span id="payment-details-card" class="payment-detail"></span> <span id="payment-details-cardNumber" class="payment-detail"></span>
           </p>
           <br />
-        <div style="width: 100%; margin: auto; padding: 2em">
+        <div class="invoice-table">
           <table style="width: 90%">
             <thead>
               <tr style="text-align: left">

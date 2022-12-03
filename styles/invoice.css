@@ -14,3 +14,26 @@
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
+
+.invoice-title {
+  text-align: center; 
+  color: #0f79af;
+}
+
+.payment-detail {
+  color: black;
+}
+
+.info {
+  color: black;
+}
+
+.payment-info {
+  color: black;
+}
+
+.invoice-table {
+  width: 100%; 
+  margin: auto; 
+  padding: 2em
+}
