@@ -98,7 +98,8 @@
   }
 
   .order-main{
-    position: absolute;
+    position: relative;
+    margin: auto;
     width: 1300px;
     padding: 80px;
   }
