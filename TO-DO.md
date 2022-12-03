@@ -92,7 +92,3 @@ For 100%
 - Added FAQ (Louis)
 
 # Future stuff
-- Create a invoice solution (needs css)
-- Visual indicator for when items are added to basket (alert box)
-- Custom 404 page
-- Need report to be written.
